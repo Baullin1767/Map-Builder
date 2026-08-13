@@ -1,0 +1,1430 @@
+fileFormatVersion: 2
+guid: 2634b176a2d26fc4fbd3698479dec62a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5266252457211096521
+    second: 3slime_spritesheet_orange_0
+  - first:
+      213: -9038090411622066148
+    second: 3slime_spritesheet_orange_1
+  - first:
+      213: 1617951652067786893
+    second: 3slime_spritesheet_orange_2
+  - first:
+      213: 4569338512667376640
+    second: 3slime_spritesheet_orange_3
+  - first:
+      213: -8212451426234095518
+    second: 3slime_spritesheet_orange_4
+  - first:
+      213: -1863728966392661538
+    second: 3slime_spritesheet_orange_5
+  - first:
+      213: 4289504754886989024
+    second: 3slime_spritesheet_orange_6
+  - first:
+      213: -1446891148214418172
+    second: 3slime_spritesheet_orange_7
+  - first:
+      213: -8154764250083602021
+    second: 3slime_spritesheet_orange_8
+  - first:
+      213: -5419510889966379176
+    second: 3slime_spritesheet_orange_9
+  - first:
+      213: -3174266203588982561
+    second: 3slime_spritesheet_orange_10
+  - first:
+      213: -8138026446597127404
+    second: 3slime_spritesheet_orange_11
+  - first:
+      213: -8770070042135890773
+    second: 3slime_spritesheet_orange_12
+  - first:
+      213: -7931459094839269704
+    second: 3slime_spritesheet_orange_13
+  - first:
+      213: 677150629812975050
+    second: 3slime_spritesheet_orange_14
+  - first:
+      213: 6489029776762391151
+    second: 3slime_spritesheet_orange_15
+  - first:
+      213: -1429494276861185784
+    second: 3slime_spritesheet_orange_16
+  - first:
+      213: 2549735397467650729
+    second: 3slime_spritesheet_orange_17
+  - first:
+      213: 7043393743793148576
+    second: 3slime_spritesheet_orange_18
+  - first:
+      213: -3876513974437606793
+    second: 3slime_spritesheet_orange_19
+  - first:
+      213: -5624370280482495138
+    second: 3slime_spritesheet_orange_20
+  - first:
+      213: -4639611344682434534
+    second: 3slime_spritesheet_orange_21
+  - first:
+      213: 3373526763692632012
+    second: 3slime_spritesheet_orange_22
+  - first:
+      213: 2368291166389938367
+    second: 3slime_spritesheet_orange_23
+  - first:
+      213: -8506121390737016777
+    second: 3slime_spritesheet_orange_24
+  - first:
+      213: 7160052812007831962
+    second: 3slime_spritesheet_orange_25
+  - first:
+      213: -605031353468588201
+    second: 3slime_spritesheet_orange_26
+  - first:
+      213: -8287256674113324329
+    second: 3slime_spritesheet_orange_27
+  - first:
+      213: -4825061413816233704
+    second: 3slime_spritesheet_orange_28
+  - first:
+      213: 1195057518554706638
+    second: 3slime_spritesheet_orange_29
+  - first:
+      213: -5644068050526997386
+    second: 3slime_spritesheet_orange_30
+  - first:
+      213: 7974225080467209379
+    second: 3slime_spritesheet_orange_31
+  - first:
+      213: -3872627409992646905
+    second: 3slime_spritesheet_orange_32
+  - first:
+      213: -6429575562977213840
+    second: 3slime_spritesheet_orange_33
+  - first:
+      213: -9101929065357136956
+    second: 3slime_spritesheet_orange_34
+  - first:
+      213: 7559645575350029494
+    second: 3slime_spritesheet_orange_35
+  - first:
+      213: -2311319654424498215
+    second: 3slime_spritesheet_orange_36
+  - first:
+      213: -74386074808733041
+    second: 3slime_spritesheet_orange_37
+  - first:
+      213: -7164675630371429233
+    second: 3slime_spritesheet_orange_38
+  - first:
+      213: 4971473359555490215
+    second: 3slime_spritesheet_orange_39
+  - first:
+      213: -8001669771986922174
+    second: 3slime_spritesheet_orange_40
+  - first:
+      213: 1030485472614343376
+    second: 3slime_spritesheet_orange_41
+  - first:
+      213: 4292379884725182342
+    second: 3slime_spritesheet_orange_42
+  - first:
+      213: 4841962156580359126
+    second: 3slime_spritesheet_orange_43
+  - first:
+      213: -9178828796888158908
+    second: 3slime_spritesheet_orange_44
+  - first:
+      213: 8008192400052183787
+    second: 3slime_spritesheet_orange_45
+  - first:
+      213: 6299230815061489056
+    second: 3slime_spritesheet_orange_46
+  - first:
+      213: 923467947266291761
+    second: 3slime_spritesheet_orange_47
+  - first:
+      213: 7911456299749819582
+    second: 3slime_spritesheet_orange_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 799
+        width: 195
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd689145bc751940800000000000000
+      internalID: 5266252457211096521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_1
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 799
+        width: 208
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18176f08a0429280800000000000000
+      internalID: -9038090411622066148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_2
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 799
+        width: 213
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80c14d847e147610800000000000000
+      internalID: 1617951652067786893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_3
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 799
+        width: 216
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cfc0afa2d896f30800000000000000
+      internalID: 4569338512667376640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_4
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 800
+        width: 211
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268aa2470f2870e80800000000000000
+      internalID: -8212451426234095518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 597
+        width: 195
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed93f882164b226e0800000000000000
+      internalID: -1863728966392661538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 598
+        width: 199
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4536909d1678b30800000000000000
+      internalID: 4289504754886989024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_7
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 598
+        width: 194
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405c50aaa2c9bebe0800000000000000
+      internalID: -1446891148214418172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_8
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 598
+        width: 195
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9156bece1574de80800000000000000
+      internalID: -8154764250083602021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_9
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 599
+        width: 185
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f51333f870ac4b0800000000000000
+      internalID: -5419510889966379176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 392
+        width: 193
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd80d80b4bdb2f3d0800000000000000
+      internalID: -3174266203588982561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_11
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 393
+        width: 188
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41308dd501cef0f80800000000000000
+      internalID: -8138026446597127404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_12
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 392
+        width: 188
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4f13333c37a4680800000000000000
+      internalID: -8770070042135890773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_13
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 393
+        width: 185
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b66095d9fbcde190800000000000000
+      internalID: -7931459094839269704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_14
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 393
+        width: 186
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac53f6df8e8b56900800000000000000
+      internalID: 677150629812975050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 180
+        width: 124
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6acadc933aad0a50800000000000000
+      internalID: 6489029776762391151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_16
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 179
+        width: 126
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8013c3b678a692ce0800000000000000
+      internalID: -1429494276861185784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_17
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 98
+        width: 122
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa7c4db5da726320800000000000000
+      internalID: 2549735397467650729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_18
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 180
+        width: 116
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2dfffda492fb160800000000000000
+      internalID: 7043393743793148576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_19
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 180
+        width: 117
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a0fc2341bd33ac0800000000000000
+      internalID: -3876513974437606793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_20
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 150
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55a392770932f1b0800000000000000
+      internalID: -5624370280482495138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_21
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 138
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10c450501acc9fb0800000000000000
+      internalID: -4639611344682434534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_22
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 157
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc72c26c7bc21de20800000000000000
+      internalID: 3373526763692632012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_23
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 150
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb82e51a44cddd020800000000000000
+      internalID: 2368291166389938367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_24
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 164
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738b4c899af24f980800000000000000
+      internalID: -8506121390737016777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_25
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 154
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9973c0d81e9d5360800000000000000
+      internalID: 7160052812007831962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_26
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 140
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fe78a803f7a97f0800000000000000
+      internalID: -605031353468588201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_27
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 148
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da7df076ffbdfc80800000000000000
+      internalID: -8287256674113324329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_28
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 131
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8111a0a5530f90db0800000000000000
+      internalID: -4825061413816233704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_29
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 139
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2fc9f3b72b59010800000000000000
+      internalID: 1195057518554706638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_30
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 133
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674f438f20e3ca1b0800000000000000
+      internalID: -5644068050526997386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_31
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 117
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac324026732aae60800000000000000
+      internalID: 7974225080467209379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_32
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 135
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f72ff73e9a14ac0800000000000000
+      internalID: -3872627409992646905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_33
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 129
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0720630471f85c6a0800000000000000
+      internalID: -6429575562977213840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_34
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 111
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cba5983db37fa180800000000000000
+      internalID: -9101929065357136956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_35
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 122
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc879a199149e860800000000000000
+      internalID: 7559645575350029494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_36
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 113
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df26ab250b8cefd0800000000000000
+      internalID: -2311319654424498215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_37
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 108
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f823ac2524ab7fef0800000000000000
+      internalID: -74386074808733041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_38
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 90
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8420d86975f19c90800000000000000
+      internalID: -7164675630371429233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_39
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 104
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a17f963ea83ef440800000000000000
+      internalID: 4971473359555490215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_40
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 88
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2451dbeacbb54f090800000000000000
+      internalID: -8001669771986922174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_41
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 85
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2e06dd3150d4e00800000000000000
+      internalID: 1030485472614343376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_42
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 92
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f931e53c8919b30800000000000000
+      internalID: 4292379884725182342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_43
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 92
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db4bd67dea123340800000000000000
+      internalID: 4841962156580359126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_44
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 63
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44dea5b37df3e9080800000000000000
+      internalID: -9178828796888158908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_45
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 80
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2e7120f80d22f60800000000000000
+      internalID: 8008192400052183787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_46
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 80
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a53fe13d0d5b6750800000000000000
+      internalID: 6299230815061489056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_47
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 45
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138344e8431d0dc00800000000000000
+      internalID: 923467947266291761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_orange_48
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 25
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb44d9286932bcd60800000000000000
+      internalID: 7911456299749819582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      3slime_spritesheet_orange_0: 5266252457211096521
+      3slime_spritesheet_orange_1: -9038090411622066148
+      3slime_spritesheet_orange_10: -3174266203588982561
+      3slime_spritesheet_orange_11: -8138026446597127404
+      3slime_spritesheet_orange_12: -8770070042135890773
+      3slime_spritesheet_orange_13: -7931459094839269704
+      3slime_spritesheet_orange_14: 677150629812975050
+      3slime_spritesheet_orange_15: 6489029776762391151
+      3slime_spritesheet_orange_16: -1429494276861185784
+      3slime_spritesheet_orange_17: 2549735397467650729
+      3slime_spritesheet_orange_18: 7043393743793148576
+      3slime_spritesheet_orange_19: -3876513974437606793
+      3slime_spritesheet_orange_2: 1617951652067786893
+      3slime_spritesheet_orange_20: -5624370280482495138
+      3slime_spritesheet_orange_21: -4639611344682434534
+      3slime_spritesheet_orange_22: 3373526763692632012
+      3slime_spritesheet_orange_23: 2368291166389938367
+      3slime_spritesheet_orange_24: -8506121390737016777
+      3slime_spritesheet_orange_25: 7160052812007831962
+      3slime_spritesheet_orange_26: -605031353468588201
+      3slime_spritesheet_orange_27: -8287256674113324329
+      3slime_spritesheet_orange_28: -4825061413816233704
+      3slime_spritesheet_orange_29: 1195057518554706638
+      3slime_spritesheet_orange_3: 4569338512667376640
+      3slime_spritesheet_orange_30: -5644068050526997386
+      3slime_spritesheet_orange_31: 7974225080467209379
+      3slime_spritesheet_orange_32: -3872627409992646905
+      3slime_spritesheet_orange_33: -6429575562977213840
+      3slime_spritesheet_orange_34: -9101929065357136956
+      3slime_spritesheet_orange_35: 7559645575350029494
+      3slime_spritesheet_orange_36: -2311319654424498215
+      3slime_spritesheet_orange_37: -74386074808733041
+      3slime_spritesheet_orange_38: -7164675630371429233
+      3slime_spritesheet_orange_39: 4971473359555490215
+      3slime_spritesheet_orange_4: -8212451426234095518
+      3slime_spritesheet_orange_40: -8001669771986922174
+      3slime_spritesheet_orange_41: 1030485472614343376
+      3slime_spritesheet_orange_42: 4292379884725182342
+      3slime_spritesheet_orange_43: 4841962156580359126
+      3slime_spritesheet_orange_44: -9178828796888158908
+      3slime_spritesheet_orange_45: 8008192400052183787
+      3slime_spritesheet_orange_46: 6299230815061489056
+      3slime_spritesheet_orange_47: 923467947266291761
+      3slime_spritesheet_orange_48: 7911456299749819582
+      3slime_spritesheet_orange_5: -1863728966392661538
+      3slime_spritesheet_orange_6: 4289504754886989024
+      3slime_spritesheet_orange_7: -1446891148214418172
+      3slime_spritesheet_orange_8: -8154764250083602021
+      3slime_spritesheet_orange_9: -5419510889966379176
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

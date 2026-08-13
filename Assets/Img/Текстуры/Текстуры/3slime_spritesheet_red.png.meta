@@ -1,0 +1,1430 @@
+fileFormatVersion: 2
+guid: 065b9019ab3d8274dbdae1a92951a80f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7440467651721087853
+    second: 3slime_spritesheet_red_0
+  - first:
+      213: -519836545131803082
+    second: 3slime_spritesheet_red_1
+  - first:
+      213: -4479637319361046287
+    second: 3slime_spritesheet_red_2
+  - first:
+      213: 6588783443234304229
+    second: 3slime_spritesheet_red_3
+  - first:
+      213: -1002454072168826989
+    second: 3slime_spritesheet_red_4
+  - first:
+      213: 5950503296028683728
+    second: 3slime_spritesheet_red_5
+  - first:
+      213: 5695040646524776590
+    second: 3slime_spritesheet_red_6
+  - first:
+      213: -5197975148711756934
+    second: 3slime_spritesheet_red_7
+  - first:
+      213: 4129222497410003120
+    second: 3slime_spritesheet_red_8
+  - first:
+      213: -466967259687792950
+    second: 3slime_spritesheet_red_9
+  - first:
+      213: 3446274044779799162
+    second: 3slime_spritesheet_red_10
+  - first:
+      213: -6377077047500483026
+    second: 3slime_spritesheet_red_11
+  - first:
+      213: -2981176162168861171
+    second: 3slime_spritesheet_red_12
+  - first:
+      213: 2596154878764044156
+    second: 3slime_spritesheet_red_13
+  - first:
+      213: -5510334549876838577
+    second: 3slime_spritesheet_red_14
+  - first:
+      213: -835734749366032607
+    second: 3slime_spritesheet_red_15
+  - first:
+      213: 1267087393439361082
+    second: 3slime_spritesheet_red_16
+  - first:
+      213: -5861924946733753613
+    second: 3slime_spritesheet_red_17
+  - first:
+      213: 989123233090174090
+    second: 3slime_spritesheet_red_18
+  - first:
+      213: 5461174015650061289
+    second: 3slime_spritesheet_red_19
+  - first:
+      213: 5252647324248165973
+    second: 3slime_spritesheet_red_20
+  - first:
+      213: 1777065756976667986
+    second: 3slime_spritesheet_red_21
+  - first:
+      213: -3335642544201629588
+    second: 3slime_spritesheet_red_22
+  - first:
+      213: -5617266035252222991
+    second: 3slime_spritesheet_red_23
+  - first:
+      213: -6282818410819826593
+    second: 3slime_spritesheet_red_24
+  - first:
+      213: 528253232245552033
+    second: 3slime_spritesheet_red_25
+  - first:
+      213: -2716201214756567885
+    second: 3slime_spritesheet_red_26
+  - first:
+      213: -2417524258866193305
+    second: 3slime_spritesheet_red_27
+  - first:
+      213: -7533108658059102012
+    second: 3slime_spritesheet_red_28
+  - first:
+      213: 3702935685660219595
+    second: 3slime_spritesheet_red_29
+  - first:
+      213: 2042453980680379740
+    second: 3slime_spritesheet_red_30
+  - first:
+      213: 8425675821018063162
+    second: 3slime_spritesheet_red_31
+  - first:
+      213: 4287196613866911537
+    second: 3slime_spritesheet_red_32
+  - first:
+      213: -1300822844011530450
+    second: 3slime_spritesheet_red_33
+  - first:
+      213: 2908865603983495660
+    second: 3slime_spritesheet_red_34
+  - first:
+      213: -7332254014503315482
+    second: 3slime_spritesheet_red_35
+  - first:
+      213: 4398181714603332396
+    second: 3slime_spritesheet_red_36
+  - first:
+      213: -8849359958396962801
+    second: 3slime_spritesheet_red_37
+  - first:
+      213: -1103570592838277977
+    second: 3slime_spritesheet_red_38
+  - first:
+      213: -5467641321580544885
+    second: 3slime_spritesheet_red_39
+  - first:
+      213: -838040453697249686
+    second: 3slime_spritesheet_red_40
+  - first:
+      213: 8434360644568323348
+    second: 3slime_spritesheet_red_41
+  - first:
+      213: -386544484002037212
+    second: 3slime_spritesheet_red_42
+  - first:
+      213: -6072832632926473492
+    second: 3slime_spritesheet_red_43
+  - first:
+      213: 5690945774343438560
+    second: 3slime_spritesheet_red_44
+  - first:
+      213: -2847526223812307135
+    second: 3slime_spritesheet_red_45
+  - first:
+      213: 8880607690382306739
+    second: 3slime_spritesheet_red_46
+  - first:
+      213: -4334935982204941576
+    second: 3slime_spritesheet_red_47
+  - first:
+      213: -220586324447737760
+    second: 3slime_spritesheet_red_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 799
+        width: 195
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6bce9f68e9d14760800000000000000
+      internalID: 7440467651721087853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_1
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 799
+        width: 208
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e072a9a6b29c8f0800000000000000
+      internalID: -519836545131803082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_2
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 799
+        width: 213
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8d6e8979125d1c0800000000000000
+      internalID: -4479637319361046287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_3
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 799
+        width: 216
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0b4fbf1af007b50800000000000000
+      internalID: 6588783443234304229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_4
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 800
+        width: 211
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397bbb425519612f0800000000000000
+      internalID: -1002454072168826989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 597
+        width: 195
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dda49a783f649250800000000000000
+      internalID: 5950503296028683728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 598
+        width: 199
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80358d5b49d80f40800000000000000
+      internalID: 5695040646524776590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_7
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 598
+        width: 194
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b3abd64251dd7b0800000000000000
+      internalID: -5197975148711756934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_8
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 598
+        width: 195
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0bcacdbf1fd4930800000000000000
+      internalID: 4129222497410003120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_9
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 599
+        width: 185
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace429c50cff489f0800000000000000
+      internalID: -466967259687792950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 392
+        width: 193
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72afbd0cff93df20800000000000000
+      internalID: 3446274044779799162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_11
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 393
+        width: 188
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26df6666321087a0800000000000000
+      internalID: -6377077047500483026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_12
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 392
+        width: 188
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e0011531cb0a6d0800000000000000
+      internalID: -2981176162168861171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_13
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 393
+        width: 185
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fc0a27b15670420800000000000000
+      internalID: 2596154878764044156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_14
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 393
+        width: 186
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f67010ceb5783b0800000000000000
+      internalID: -5510334549876838577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 180
+        width: 124
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12766916cafd664f0800000000000000
+      internalID: -835734749366032607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_16
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 179
+        width: 126
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3824516549959110800000000000000
+      internalID: 1267087393439361082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_17
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 98
+        width: 122
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa1fe9915246aea0800000000000000
+      internalID: -5861924946733753613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_18
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 180
+        width: 116
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8cfc6307521abd00800000000000000
+      internalID: 989123233090174090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_19
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 180
+        width: 117
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb5a6b25dcf9cb40800000000000000
+      internalID: 5461174015650061289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_20
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 150
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ec73469e625e840800000000000000
+      internalID: 5252647324248165973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_21
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 138
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25dda1304e769a810800000000000000
+      internalID: 1777065756976667986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_22
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 157
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c608e2f67ca65b1d0800000000000000
+      internalID: -3335642544201629588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_23
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 150
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3acef6d467b02b0800000000000000
+      internalID: -5617266035252222991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_24
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 164
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cccc271f1fec8a0800000000000000
+      internalID: -6282818410819826593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_25
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 154
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3b273148bb45700800000000000000
+      internalID: 528253232245552033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_26
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 140
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b443ffd26d1e4ad0800000000000000
+      internalID: -2716201214756567885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_27
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 148
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c1462ce7a337ed0800000000000000
+      internalID: -2417524258866193305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_28
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 131
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c8b7fd6695057790800000000000000
+      internalID: -7533108658059102012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_29
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 139
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc815e91368736330800000000000000
+      internalID: 3702935685660219595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_30
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 133
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d5984f211485c10800000000000000
+      internalID: 2042453980680379740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_31
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 117
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a312160a4830ee470800000000000000
+      internalID: 8425675821018063162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_32
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 135
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1377bc31b9e2f7b30800000000000000
+      internalID: 4287196613866911537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_33
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 129
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27baf2f38c82fde0800000000000000
+      internalID: -1300822844011530450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_34
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 111
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1d9c0eadd5e5820800000000000000
+      internalID: 2908865603983495660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_35
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 122
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7199e52d99e3a90800000000000000
+      internalID: -7332254014503315482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_36
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 113
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23dc8487fa790d30800000000000000
+      internalID: 4398181714603332396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_37
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 108
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08fe26f002c03580800000000000000
+      internalID: -8849359958396962801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_38
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 90
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4ae4d84645fa0f0800000000000000
+      internalID: -1103570592838277977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_39
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 104
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cb1f3df290f14b0800000000000000
+      internalID: -5467641321580544885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_40
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 88
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ed7f1c5aeae54f0800000000000000
+      internalID: -838040453697249686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_41
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 85
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415970fa15edc0570800000000000000
+      internalID: 8434360644568323348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_42
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 92
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4220c2df6d7b2aaf0800000000000000
+      internalID: -386544484002037212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_43
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 92
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2740645e6f8bba0800000000000000
+      internalID: -6072832632926473492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_44
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 63
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e040c3a70d4afe40800000000000000
+      internalID: 5690945774343438560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_45
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 80
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147de0d7cfd8b78d0800000000000000
+      internalID: -2847526223812307135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_46
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 80
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bde6d694a14e3b70800000000000000
+      internalID: 8880607690382306739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_47
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 45
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa8d9011b637d3c0800000000000000
+      internalID: -4334935982204941576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_red_48
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 25
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068cbf818e150fcf0800000000000000
+      internalID: -220586324447737760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      3slime_spritesheet_red_0: 7440467651721087853
+      3slime_spritesheet_red_1: -519836545131803082
+      3slime_spritesheet_red_10: 3446274044779799162
+      3slime_spritesheet_red_11: -6377077047500483026
+      3slime_spritesheet_red_12: -2981176162168861171
+      3slime_spritesheet_red_13: 2596154878764044156
+      3slime_spritesheet_red_14: -5510334549876838577
+      3slime_spritesheet_red_15: -835734749366032607
+      3slime_spritesheet_red_16: 1267087393439361082
+      3slime_spritesheet_red_17: -5861924946733753613
+      3slime_spritesheet_red_18: 989123233090174090
+      3slime_spritesheet_red_19: 5461174015650061289
+      3slime_spritesheet_red_2: -4479637319361046287
+      3slime_spritesheet_red_20: 5252647324248165973
+      3slime_spritesheet_red_21: 1777065756976667986
+      3slime_spritesheet_red_22: -3335642544201629588
+      3slime_spritesheet_red_23: -5617266035252222991
+      3slime_spritesheet_red_24: -6282818410819826593
+      3slime_spritesheet_red_25: 528253232245552033
+      3slime_spritesheet_red_26: -2716201214756567885
+      3slime_spritesheet_red_27: -2417524258866193305
+      3slime_spritesheet_red_28: -7533108658059102012
+      3slime_spritesheet_red_29: 3702935685660219595
+      3slime_spritesheet_red_3: 6588783443234304229
+      3slime_spritesheet_red_30: 2042453980680379740
+      3slime_spritesheet_red_31: 8425675821018063162
+      3slime_spritesheet_red_32: 4287196613866911537
+      3slime_spritesheet_red_33: -1300822844011530450
+      3slime_spritesheet_red_34: 2908865603983495660
+      3slime_spritesheet_red_35: -7332254014503315482
+      3slime_spritesheet_red_36: 4398181714603332396
+      3slime_spritesheet_red_37: -8849359958396962801
+      3slime_spritesheet_red_38: -1103570592838277977
+      3slime_spritesheet_red_39: -5467641321580544885
+      3slime_spritesheet_red_4: -1002454072168826989
+      3slime_spritesheet_red_40: -838040453697249686
+      3slime_spritesheet_red_41: 8434360644568323348
+      3slime_spritesheet_red_42: -386544484002037212
+      3slime_spritesheet_red_43: -6072832632926473492
+      3slime_spritesheet_red_44: 5690945774343438560
+      3slime_spritesheet_red_45: -2847526223812307135
+      3slime_spritesheet_red_46: 8880607690382306739
+      3slime_spritesheet_red_47: -4334935982204941576
+      3slime_spritesheet_red_48: -220586324447737760
+      3slime_spritesheet_red_5: 5950503296028683728
+      3slime_spritesheet_red_6: 5695040646524776590
+      3slime_spritesheet_red_7: -5197975148711756934
+      3slime_spritesheet_red_8: 4129222497410003120
+      3slime_spritesheet_red_9: -466967259687792950
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

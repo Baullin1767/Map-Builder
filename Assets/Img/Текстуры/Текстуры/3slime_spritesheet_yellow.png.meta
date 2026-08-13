@@ -1,0 +1,1430 @@
+fileFormatVersion: 2
+guid: b86e7a4aaed73e147babbf24dcf1179d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 198620874834833929
+    second: 3slime_spritesheet_yellow_0
+  - first:
+      213: -2394568346981909225
+    second: 3slime_spritesheet_yellow_1
+  - first:
+      213: -1905884834428027612
+    second: 3slime_spritesheet_yellow_2
+  - first:
+      213: 1096238062034248649
+    second: 3slime_spritesheet_yellow_3
+  - first:
+      213: 7894167772850515452
+    second: 3slime_spritesheet_yellow_4
+  - first:
+      213: 5372457279798531719
+    second: 3slime_spritesheet_yellow_5
+  - first:
+      213: -4204096950551762325
+    second: 3slime_spritesheet_yellow_6
+  - first:
+      213: 2972322945988475917
+    second: 3slime_spritesheet_yellow_7
+  - first:
+      213: -6389658447901769238
+    second: 3slime_spritesheet_yellow_8
+  - first:
+      213: 2960725911106844512
+    second: 3slime_spritesheet_yellow_9
+  - first:
+      213: -8807780760008287343
+    second: 3slime_spritesheet_yellow_10
+  - first:
+      213: -7771722563039860609
+    second: 3slime_spritesheet_yellow_11
+  - first:
+      213: 4613605066497877892
+    second: 3slime_spritesheet_yellow_12
+  - first:
+      213: 996622538700656653
+    second: 3slime_spritesheet_yellow_13
+  - first:
+      213: -8773343979698694655
+    second: 3slime_spritesheet_yellow_14
+  - first:
+      213: -4094341196795793384
+    second: 3slime_spritesheet_yellow_15
+  - first:
+      213: 8432423495246879943
+    second: 3slime_spritesheet_yellow_16
+  - first:
+      213: -8427707752419244475
+    second: 3slime_spritesheet_yellow_17
+  - first:
+      213: 2122666846295900112
+    second: 3slime_spritesheet_yellow_18
+  - first:
+      213: -5951641459553629675
+    second: 3slime_spritesheet_yellow_19
+  - first:
+      213: 7908641236066900697
+    second: 3slime_spritesheet_yellow_20
+  - first:
+      213: -535309737901814779
+    second: 3slime_spritesheet_yellow_21
+  - first:
+      213: 6162000707892130934
+    second: 3slime_spritesheet_yellow_22
+  - first:
+      213: 1361780763817396668
+    second: 3slime_spritesheet_yellow_23
+  - first:
+      213: -1356842340452866391
+    second: 3slime_spritesheet_yellow_24
+  - first:
+      213: 25954104651392387
+    second: 3slime_spritesheet_yellow_25
+  - first:
+      213: -3649534406462641368
+    second: 3slime_spritesheet_yellow_26
+  - first:
+      213: 2578600538799294625
+    second: 3slime_spritesheet_yellow_27
+  - first:
+      213: -1039202278717256631
+    second: 3slime_spritesheet_yellow_28
+  - first:
+      213: 946899128795537388
+    second: 3slime_spritesheet_yellow_29
+  - first:
+      213: -3142201086931673244
+    second: 3slime_spritesheet_yellow_30
+  - first:
+      213: 6665673757295158190
+    second: 3slime_spritesheet_yellow_31
+  - first:
+      213: -7345496492284751355
+    second: 3slime_spritesheet_yellow_32
+  - first:
+      213: -2626332465433911864
+    second: 3slime_spritesheet_yellow_33
+  - first:
+      213: -6380864392738124831
+    second: 3slime_spritesheet_yellow_34
+  - first:
+      213: 1953534832359065778
+    second: 3slime_spritesheet_yellow_35
+  - first:
+      213: 3472342281885061015
+    second: 3slime_spritesheet_yellow_36
+  - first:
+      213: -6142299764482017112
+    second: 3slime_spritesheet_yellow_37
+  - first:
+      213: 2948523652090931008
+    second: 3slime_spritesheet_yellow_38
+  - first:
+      213: 1397809568837904170
+    second: 3slime_spritesheet_yellow_39
+  - first:
+      213: 3293244058108950015
+    second: 3slime_spritesheet_yellow_40
+  - first:
+      213: -3585295297129487474
+    second: 3slime_spritesheet_yellow_41
+  - first:
+      213: -8409382750122790369
+    second: 3slime_spritesheet_yellow_42
+  - first:
+      213: 4101061451790555148
+    second: 3slime_spritesheet_yellow_43
+  - first:
+      213: 7667349099338279260
+    second: 3slime_spritesheet_yellow_44
+  - first:
+      213: 842735316393561308
+    second: 3slime_spritesheet_yellow_45
+  - first:
+      213: 1879771741880094864
+    second: 3slime_spritesheet_yellow_46
+  - first:
+      213: -3841269746249058587
+    second: 3slime_spritesheet_yellow_47
+  - first:
+      213: 5545835180105829053
+    second: 3slime_spritesheet_yellow_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 799
+        width: 195
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902f18122a4a1c200800000000000000
+      internalID: 198620874834833929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_1
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 799
+        width: 208
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71dbfbf76c8c4ced0800000000000000
+      internalID: -2394568346981909225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_2
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 799
+        width: 213
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42dfc1547dfec85e0800000000000000
+      internalID: -1905884834428027612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_3
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 799
+        width: 216
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c360d495be963f00800000000000000
+      internalID: 1096238062034248649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_4
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 800
+        width: 211
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd671aa3c7bd8d60800000000000000
+      internalID: 7894167772850515452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 597
+        width: 195
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7865a557e6dce8a40800000000000000
+      internalID: 5372457279798531719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 598
+        width: 199
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a2f05091c08a5c0800000000000000
+      internalID: -4204096950551762325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_7
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 598
+        width: 194
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0cb269a8ffcf3920800000000000000
+      internalID: 2972322945988475917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_8
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 598
+        width: 195
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1cdb8de7f5357a0800000000000000
+      internalID: -6389658447901769238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_9
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 599
+        width: 185
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06771d0978c961920800000000000000
+      internalID: 2960725911106844512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 392
+        width: 193
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b9f2c701a74c580800000000000000
+      internalID: -8807780760008287343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_11
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 393
+        width: 188
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78ee19518b452490800000000000000
+      internalID: -7771722563039860609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_12
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 392
+        width: 188
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4876c823d51d60040800000000000000
+      internalID: 4613605066497877892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_13
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 393
+        width: 185
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00966a2be6b4dd00800000000000000
+      internalID: 996622538700656653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_14
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 393
+        width: 186
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1065fb53222de3680800000000000000
+      internalID: -8773343979698694655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 180
+        width: 124
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8103dbfcf5afd27c0800000000000000
+      internalID: -4094341196795793384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_16
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 179
+        width: 126
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc19d5fd7cf50570800000000000000
+      internalID: 8432423495246879943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_17
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 98
+        width: 122
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546ce3a7374ca0b80800000000000000
+      internalID: -8427707752419244475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_18
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 180
+        width: 116
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df37f5104a357d10800000000000000
+      internalID: 2122666846295900112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_19
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 180
+        width: 117
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a81dc20a5876da0800000000000000
+      internalID: -5951641459553629675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_20
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 150
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da16cb6d4321cd60800000000000000
+      internalID: 7908641236066900697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_21
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 138
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c0e8b21a23298f0800000000000000
+      internalID: -535309737901814779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_22
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 157
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674bd930ff2d38550800000000000000
+      internalID: 6162000707892130934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_23
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 150
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9cb41c36406e210800000000000000
+      internalID: 1361780763817396668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_24
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 164
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6e81984178b2de0800000000000000
+      internalID: -1356842340452866391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_25
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 154
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385a534ee153c5000800000000000000
+      internalID: 25954104651392387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_26
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 140
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b6a3b1bcf3a5dc0800000000000000
+      internalID: -3649534406462641368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_27
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 148
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a843cc278709c320800000000000000
+      internalID: 2578600538799294625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_28
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 131
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c084f88030491f0800000000000000
+      internalID: -1039202278717256631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_29
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 139
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef1cf1adbf042d00800000000000000
+      internalID: 946899128795537388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_30
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 133
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f579072c8a464d0800000000000000
+      internalID: -3142201086931673244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_31
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 117
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3a83c47fa318c50800000000000000
+      internalID: 6665673757295158190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_32
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 135
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5025d7ebbdd8f0a90800000000000000
+      internalID: -7345496492284751355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_33
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 129
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd5cbf99846d8bd0800000000000000
+      internalID: -2626332465433911864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_34
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 111
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ebc7ee54ad9277a0800000000000000
+      internalID: -6380864392738124831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_35
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 122
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b84d1b64995c1b10800000000000000
+      internalID: 1953534832359065778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_36
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 113
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f045a78ec303030800000000000000
+      internalID: 3472342281885061015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_37
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 108
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8751258ea22caa0800000000000000
+      internalID: -6142299764482017112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_38
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 90
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047a7beb3a24be820800000000000000
+      internalID: 2948523652090931008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_39
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 104
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27a93e9564066310800000000000000
+      internalID: 1397809568837904170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_40
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 88
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5ff32c504f3bd20800000000000000
+      internalID: 3293244058108950015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_41
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 85
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83e7b74ce87e3ec0800000000000000
+      internalID: -3585295297129487474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_42
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 92
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1232ae81fedb4b80800000000000000
+      internalID: -8409382750122790369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_43
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 92
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08160c79a5e9e830800000000000000
+      internalID: 4101061451790555148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_44
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 63
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5928fae165e76a60800000000000000
+      internalID: 7667349099338279260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_45
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 80
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc80552e4ff1bb00800000000000000
+      internalID: 842735316393561308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_46
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 80
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0909495907a461a10800000000000000
+      internalID: 1879771741880094864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_47
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 45
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6be58848111bac0800000000000000
+      internalID: -3841269746249058587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3slime_spritesheet_yellow_48
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 25
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba821596b3c6fc40800000000000000
+      internalID: 5545835180105829053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      3slime_spritesheet_yellow_0: 198620874834833929
+      3slime_spritesheet_yellow_1: -2394568346981909225
+      3slime_spritesheet_yellow_10: -8807780760008287343
+      3slime_spritesheet_yellow_11: -7771722563039860609
+      3slime_spritesheet_yellow_12: 4613605066497877892
+      3slime_spritesheet_yellow_13: 996622538700656653
+      3slime_spritesheet_yellow_14: -8773343979698694655
+      3slime_spritesheet_yellow_15: -4094341196795793384
+      3slime_spritesheet_yellow_16: 8432423495246879943
+      3slime_spritesheet_yellow_17: -8427707752419244475
+      3slime_spritesheet_yellow_18: 2122666846295900112
+      3slime_spritesheet_yellow_19: -5951641459553629675
+      3slime_spritesheet_yellow_2: -1905884834428027612
+      3slime_spritesheet_yellow_20: 7908641236066900697
+      3slime_spritesheet_yellow_21: -535309737901814779
+      3slime_spritesheet_yellow_22: 6162000707892130934
+      3slime_spritesheet_yellow_23: 1361780763817396668
+      3slime_spritesheet_yellow_24: -1356842340452866391
+      3slime_spritesheet_yellow_25: 25954104651392387
+      3slime_spritesheet_yellow_26: -3649534406462641368
+      3slime_spritesheet_yellow_27: 2578600538799294625
+      3slime_spritesheet_yellow_28: -1039202278717256631
+      3slime_spritesheet_yellow_29: 946899128795537388
+      3slime_spritesheet_yellow_3: 1096238062034248649
+      3slime_spritesheet_yellow_30: -3142201086931673244
+      3slime_spritesheet_yellow_31: 6665673757295158190
+      3slime_spritesheet_yellow_32: -7345496492284751355
+      3slime_spritesheet_yellow_33: -2626332465433911864
+      3slime_spritesheet_yellow_34: -6380864392738124831
+      3slime_spritesheet_yellow_35: 1953534832359065778
+      3slime_spritesheet_yellow_36: 3472342281885061015
+      3slime_spritesheet_yellow_37: -6142299764482017112
+      3slime_spritesheet_yellow_38: 2948523652090931008
+      3slime_spritesheet_yellow_39: 1397809568837904170
+      3slime_spritesheet_yellow_4: 7894167772850515452
+      3slime_spritesheet_yellow_40: 3293244058108950015
+      3slime_spritesheet_yellow_41: -3585295297129487474
+      3slime_spritesheet_yellow_42: -8409382750122790369
+      3slime_spritesheet_yellow_43: 4101061451790555148
+      3slime_spritesheet_yellow_44: 7667349099338279260
+      3slime_spritesheet_yellow_45: 842735316393561308
+      3slime_spritesheet_yellow_46: 1879771741880094864
+      3slime_spritesheet_yellow_47: -3841269746249058587
+      3slime_spritesheet_yellow_48: 5545835180105829053
+      3slime_spritesheet_yellow_5: 5372457279798531719
+      3slime_spritesheet_yellow_6: -4204096950551762325
+      3slime_spritesheet_yellow_7: 2972322945988475917
+      3slime_spritesheet_yellow_8: -6389658447901769238
+      3slime_spritesheet_yellow_9: 2960725911106844512
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

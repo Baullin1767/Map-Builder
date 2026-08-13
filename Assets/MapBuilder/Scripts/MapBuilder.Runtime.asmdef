@@ -1,0 +1,5 @@
+{
+  "name": "MapBuilder.Runtime",
+  "rootNamespace": "MapBuilder",
+  "autoReferenced": true
+}

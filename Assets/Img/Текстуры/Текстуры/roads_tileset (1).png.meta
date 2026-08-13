@@ -1,0 +1,1820 @@
+fileFormatVersion: 2
+guid: 8bd2370d9b151554e9b51452d7278a21
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5293766202906867823
+    second: roads_tileset (1)_0
+  - first:
+      213: 2234329845900577700
+    second: roads_tileset (1)_1
+  - first:
+      213: -1079497623118042947
+    second: roads_tileset (1)_2
+  - first:
+      213: 2057563976408480053
+    second: roads_tileset (1)_3
+  - first:
+      213: 8899019241066431826
+    second: roads_tileset (1)_4
+  - first:
+      213: 6456651893566880792
+    second: roads_tileset (1)_5
+  - first:
+      213: 7345405056517294200
+    second: roads_tileset (1)_6
+  - first:
+      213: 4438677351404426379
+    second: roads_tileset (1)_7
+  - first:
+      213: 5527016443809529773
+    second: roads_tileset (1)_8
+  - first:
+      213: -7004141185885010629
+    second: roads_tileset (1)_9
+  - first:
+      213: 3427023178765189875
+    second: roads_tileset (1)_10
+  - first:
+      213: -5054661978206296344
+    second: roads_tileset (1)_11
+  - first:
+      213: 7710038762888609325
+    second: roads_tileset (1)_12
+  - first:
+      213: 6923724277895266683
+    second: roads_tileset (1)_13
+  - first:
+      213: 8241325067040987122
+    second: roads_tileset (1)_14
+  - first:
+      213: -7881919368746029444
+    second: roads_tileset (1)_15
+  - first:
+      213: 3517887232647570028
+    second: roads_tileset (1)_16
+  - first:
+      213: 7380055362719654819
+    second: roads_tileset (1)_17
+  - first:
+      213: -3813671528850787766
+    second: roads_tileset (1)_18
+  - first:
+      213: 8340383820492116559
+    second: roads_tileset (1)_19
+  - first:
+      213: 7133334648516271834
+    second: roads_tileset (1)_20
+  - first:
+      213: -311935889743056435
+    second: roads_tileset (1)_21
+  - first:
+      213: 2935950294502337537
+    second: roads_tileset (1)_22
+  - first:
+      213: 134129018776741867
+    second: roads_tileset (1)_23
+  - first:
+      213: 4656204116251867927
+    second: roads_tileset (1)_24
+  - first:
+      213: 3974817389163875975
+    second: roads_tileset (1)_25
+  - first:
+      213: 298060459135015852
+    second: roads_tileset (1)_26
+  - first:
+      213: 5775403450838988932
+    second: roads_tileset (1)_27
+  - first:
+      213: 7556855823851418698
+    second: roads_tileset (1)_28
+  - first:
+      213: 616366378592475895
+    second: roads_tileset (1)_29
+  - first:
+      213: 5378380200932972435
+    second: roads_tileset (1)_30
+  - first:
+      213: -8438431354881707423
+    second: roads_tileset (1)_31
+  - first:
+      213: 3119894343605310509
+    second: roads_tileset (1)_32
+  - first:
+      213: -5441161534483373094
+    second: roads_tileset (1)_33
+  - first:
+      213: -5901414423818293528
+    second: roads_tileset (1)_34
+  - first:
+      213: -6963736847758537066
+    second: roads_tileset (1)_35
+  - first:
+      213: -2015774809492700493
+    second: roads_tileset (1)_36
+  - first:
+      213: 5809744760569791311
+    second: roads_tileset (1)_37
+  - first:
+      213: 124277774914345077
+    second: roads_tileset (1)_38
+  - first:
+      213: 6575171770138663990
+    second: roads_tileset (1)_39
+  - first:
+      213: -3899981497050250709
+    second: roads_tileset (1)_40
+  - first:
+      213: 6450078308011325777
+    second: roads_tileset (1)_41
+  - first:
+      213: 6180072643536401127
+    second: roads_tileset (1)_42
+  - first:
+      213: -5973678571161690899
+    second: roads_tileset (1)_43
+  - first:
+      213: 8329889002028024371
+    second: roads_tileset (1)_44
+  - first:
+      213: 3655874433889439291
+    second: roads_tileset (1)_45
+  - first:
+      213: -2737539048391799679
+    second: roads_tileset (1)_46
+  - first:
+      213: 4382012060807531711
+    second: roads_tileset (1)_47
+  - first:
+      213: -3369150741638717213
+    second: roads_tileset (1)_48
+  - first:
+      213: -8264694415571469605
+    second: roads_tileset (1)_49
+  - first:
+      213: -7512393428612020574
+    second: roads_tileset (1)_50
+  - first:
+      213: -7307648657443620235
+    second: roads_tileset (1)_51
+  - first:
+      213: 8859129071235777908
+    second: roads_tileset (1)_52
+  - first:
+      213: -3719432567974371360
+    second: roads_tileset (1)_53
+  - first:
+      213: -2764880285994497124
+    second: roads_tileset (1)_54
+  - first:
+      213: -5461371050449689302
+    second: roads_tileset (1)_55
+  - first:
+      213: -6985726138564775861
+    second: roads_tileset (1)_56
+  - first:
+      213: 2658805881900880993
+    second: roads_tileset (1)_57
+  - first:
+      213: 8183152109049115154
+    second: roads_tileset (1)_58
+  - first:
+      213: 1040313432852404223
+    second: roads_tileset (1)_59
+  - first:
+      213: 724654504877138566
+    second: roads_tileset (1)_60
+  - first:
+      213: 8216901636855838192
+    second: roads_tileset (1)_61
+  - first:
+      213: -7616211396527637835
+    second: roads_tileset (1)_62
+  - first:
+      213: 5305170394197382542
+    second: roads_tileset (1)_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: roads_tileset (1)_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1099
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19784cf9fa3c886b0800000000000000
+      internalID: -5293766202906867823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1099
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab05f7282fe10f10800000000000000
+      internalID: 2234329845900577700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1099
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8ab2691aad401f0800000000000000
+      internalID: -1079497623118042947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_3
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1099
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539b77cf88fed8c10800000000000000
+      internalID: 2057563976408480053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_4
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1099
+        width: 139
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2558129c9daaf7b70800000000000000
+      internalID: 8899019241066431826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_5
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1099
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c386a30b2aa9950800000000000000
+      internalID: 6456651893566880792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_6
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1099
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87842153bfe10f560800000000000000
+      internalID: 7345405056517294200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1099
+        width: 136
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b845803b889599d30800000000000000
+      internalID: 4438677351404426379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 945
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf72091c28e3bc40800000000000000
+      internalID: 5527016443809529773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 945
+        width: 136
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3504a273ba4cce90800000000000000
+      internalID: -7004141185885010629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 944
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f244578c6b3f8f20800000000000000
+      internalID: 3427023178765189875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_11
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 944
+        width: 139
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6275926bb3ad9b0800000000000000
+      internalID: -5054661978206296344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_12
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 944
+        width: 139
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2eb772c76f8ffa60800000000000000
+      internalID: 7710038762888609325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_13
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 944
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7102ba1c82061060800000000000000
+      internalID: 6923724277895266683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_14
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 944
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7108beb711f5270800000000000000
+      internalID: 8241325067040987122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_15
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 944
+        width: 137
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e2f95281ccd9290800000000000000
+      internalID: -7881919368746029444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 789
+        width: 137
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6227ddaccb02d030800000000000000
+      internalID: 3517887232647570028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_17
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 789
+        width: 136
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a32f9d40493b6660800000000000000
+      internalID: 7380055362719654819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_18
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 789
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42f3d043fd131bc0800000000000000
+      internalID: -3813671528850787766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_19
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 789
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4219de35eefeb370800000000000000
+      internalID: 8340383820492116559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_20
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 789
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade5ccc9112bef260800000000000000
+      internalID: 7133334648516271834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_21
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 789
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc17b2306f7cbabf0800000000000000
+      internalID: -311935889743056435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_22
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 789
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ce30ecc379eb820800000000000000
+      internalID: 2935950294502337537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_23
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 789
+        width: 135
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be76246c1a58cd100800000000000000
+      internalID: 134129018776741867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 633
+        width: 137
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b77ee59f82e9040800000000000000
+      internalID: 4656204116251867927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_25
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 633
+        width: 136
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e88202b53692730800000000000000
+      internalID: 3974817389163875975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_26
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 633
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab155c886ce22400800000000000000
+      internalID: 298060459135015852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_27
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 633
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488b2d1d6da562050800000000000000
+      internalID: 5775403450838988932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_28
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 633
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44718775585fd860800000000000000
+      internalID: 7556855823851418698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_29
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 633
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa9f77a4f5cd8800800000000000000
+      internalID: 616366378592475895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_30
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 633
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3979a9ffb48d3aa40800000000000000
+      internalID: 5378380200932972435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_31
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 633
+        width: 137
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162f1c6346ba4ea80800000000000000
+      internalID: -8438431354881707423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_32
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 477
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24585720671c4b20800000000000000
+      internalID: 3119894343605310509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_33
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 477
+        width: 137
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad36993b96c1d74b0800000000000000
+      internalID: -5441161534483373094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_34
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 477
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eea1fb39d6f91ea0800000000000000
+      internalID: -5901414423818293528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_35
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 477
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ecd008b36db5f90800000000000000
+      internalID: -6963736847758537066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_36
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 477
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2c105ad778604e0800000000000000
+      internalID: -2015774809492700493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_37
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 477
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f430371141c50a050800000000000000
+      internalID: 5809744760569791311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_38
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 477
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578de335af589b100800000000000000
+      internalID: 124277774914345077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_39
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 477
+        width: 135
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c9a4063e3bf3b50800000000000000
+      internalID: 6575171770138663990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_40
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 322
+        width: 138
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2249bdcd7b70e9c0800000000000000
+      internalID: -3899981497050250709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_41
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 322
+        width: 137
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159b7721c08438950800000000000000
+      internalID: 6450078308011325777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_42
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 322
+        width: 138
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2b81c635704c550800000000000000
+      internalID: 6180072643536401127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_43
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 322
+        width: 139
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec5b8b4dfa391da0800000000000000
+      internalID: -5973678571161690899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_44
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 322
+        width: 138
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3324058e9e5b99370800000000000000
+      internalID: 8329889002028024371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_45
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 322
+        width: 139
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e896f8d664cb230800000000000000
+      internalID: 3655874433889439291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_46
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 322
+        width: 138
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c88d55dbe420ad0800000000000000
+      internalID: -2737539048391799679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_47
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 322
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc09ed90c800dc30800000000000000
+      internalID: 4382012060807531711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_48
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 166
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e061e1404f5e31d0800000000000000
+      internalID: -3369150741638717213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_49
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 166
+        width: 136
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda35be9738ed4d80800000000000000
+      internalID: -8264694415571469605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_50
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 166
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a60a92aafd9eb790800000000000000
+      internalID: -7512393428612020574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_51
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 166
+        width: 139
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a76bd7344069a90800000000000000
+      internalID: -7307648657443620235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_52
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 166
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475485ed3f2f1fa70800000000000000
+      internalID: 8859129071235777908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_53
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 166
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef5edb29cbe16cc0800000000000000
+      internalID: -3719432567974371360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_54
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 166
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b41d2670c21a9d0800000000000000
+      internalID: -2764880285994497124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_55
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 166
+        width: 136
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25285717ff4534b0800000000000000
+      internalID: -5461371050449689302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_56
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 12
+        width: 139
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b407fa4c617bd0f90800000000000000
+      internalID: -6985726138564775861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_57
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 12
+        width: 136
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164db65dcd9f5e420800000000000000
+      internalID: 2658805881900880993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_58
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 12
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2127cdaac75609170800000000000000
+      internalID: 8183152109049115154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_59
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 12
+        width: 139
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff71c3c2e8fef6e00800000000000000
+      internalID: 1040313432852404223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_60
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 12
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682a61cce6d7e0a00800000000000000
+      internalID: 724654504877138566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_61
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 12
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f53e13f08c480270800000000000000
+      internalID: 8216901636855838192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_62
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 12
+        width: 139
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba30b75618cd4690800000000000000
+      internalID: -7616211396527637835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_tileset (1)_63
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 12
+        width: 136
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85dd039d50cf9940800000000000000
+      internalID: 5305170394197382542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      roads_tileset (1)_0: -5293766202906867823
+      roads_tileset (1)_1: 2234329845900577700
+      roads_tileset (1)_10: 3427023178765189875
+      roads_tileset (1)_11: -5054661978206296344
+      roads_tileset (1)_12: 7710038762888609325
+      roads_tileset (1)_13: 6923724277895266683
+      roads_tileset (1)_14: 8241325067040987122
+      roads_tileset (1)_15: -7881919368746029444
+      roads_tileset (1)_16: 3517887232647570028
+      roads_tileset (1)_17: 7380055362719654819
+      roads_tileset (1)_18: -3813671528850787766
+      roads_tileset (1)_19: 8340383820492116559
+      roads_tileset (1)_2: -1079497623118042947
+      roads_tileset (1)_20: 7133334648516271834
+      roads_tileset (1)_21: -311935889743056435
+      roads_tileset (1)_22: 2935950294502337537
+      roads_tileset (1)_23: 134129018776741867
+      roads_tileset (1)_24: 4656204116251867927
+      roads_tileset (1)_25: 3974817389163875975
+      roads_tileset (1)_26: 298060459135015852
+      roads_tileset (1)_27: 5775403450838988932
+      roads_tileset (1)_28: 7556855823851418698
+      roads_tileset (1)_29: 616366378592475895
+      roads_tileset (1)_3: 2057563976408480053
+      roads_tileset (1)_30: 5378380200932972435
+      roads_tileset (1)_31: -8438431354881707423
+      roads_tileset (1)_32: 3119894343605310509
+      roads_tileset (1)_33: -5441161534483373094
+      roads_tileset (1)_34: -5901414423818293528
+      roads_tileset (1)_35: -6963736847758537066
+      roads_tileset (1)_36: -2015774809492700493
+      roads_tileset (1)_37: 5809744760569791311
+      roads_tileset (1)_38: 124277774914345077
+      roads_tileset (1)_39: 6575171770138663990
+      roads_tileset (1)_4: 8899019241066431826
+      roads_tileset (1)_40: -3899981497050250709
+      roads_tileset (1)_41: 6450078308011325777
+      roads_tileset (1)_42: 6180072643536401127
+      roads_tileset (1)_43: -5973678571161690899
+      roads_tileset (1)_44: 8329889002028024371
+      roads_tileset (1)_45: 3655874433889439291
+      roads_tileset (1)_46: -2737539048391799679
+      roads_tileset (1)_47: 4382012060807531711
+      roads_tileset (1)_48: -3369150741638717213
+      roads_tileset (1)_49: -8264694415571469605
+      roads_tileset (1)_5: 6456651893566880792
+      roads_tileset (1)_50: -7512393428612020574
+      roads_tileset (1)_51: -7307648657443620235
+      roads_tileset (1)_52: 8859129071235777908
+      roads_tileset (1)_53: -3719432567974371360
+      roads_tileset (1)_54: -2764880285994497124
+      roads_tileset (1)_55: -5461371050449689302
+      roads_tileset (1)_56: -6985726138564775861
+      roads_tileset (1)_57: 2658805881900880993
+      roads_tileset (1)_58: 8183152109049115154
+      roads_tileset (1)_59: 1040313432852404223
+      roads_tileset (1)_6: 7345405056517294200
+      roads_tileset (1)_60: 724654504877138566
+      roads_tileset (1)_61: 8216901636855838192
+      roads_tileset (1)_62: -7616211396527637835
+      roads_tileset (1)_63: 5305170394197382542
+      roads_tileset (1)_7: 4438677351404426379
+      roads_tileset (1)_8: 5527016443809529773
+      roads_tileset (1)_9: -7004141185885010629
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

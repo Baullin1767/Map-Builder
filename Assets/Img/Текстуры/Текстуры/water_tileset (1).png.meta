@@ -1,0 +1,1976 @@
+fileFormatVersion: 2
+guid: b5857876eb2b11c4283cd84be987e9aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5876699455927069635
+    second: water_tileset (1)_0
+  - first:
+      213: -7618948888465206853
+    second: water_tileset (1)_1
+  - first:
+      213: 1396759826505179661
+    second: water_tileset (1)_2
+  - first:
+      213: -3908640842282557525
+    second: water_tileset (1)_3
+  - first:
+      213: -7080145274202244715
+    second: water_tileset (1)_4
+  - first:
+      213: 2101697355944434988
+    second: water_tileset (1)_5
+  - first:
+      213: 8221818164351697270
+    second: water_tileset (1)_6
+  - first:
+      213: 2551219505595788556
+    second: water_tileset (1)_7
+  - first:
+      213: 3000868173566433299
+    second: water_tileset (1)_8
+  - first:
+      213: -6038405433417320551
+    second: water_tileset (1)_9
+  - first:
+      213: 6543924907120900787
+    second: water_tileset (1)_10
+  - first:
+      213: 1434409059969462039
+    second: water_tileset (1)_11
+  - first:
+      213: -7257378611224329486
+    second: water_tileset (1)_12
+  - first:
+      213: -3941541782102193741
+    second: water_tileset (1)_13
+  - first:
+      213: -8539988958113293066
+    second: water_tileset (1)_14
+  - first:
+      213: -2635525990486489642
+    second: water_tileset (1)_15
+  - first:
+      213: -1764955626170137172
+    second: water_tileset (1)_16
+  - first:
+      213: 4937468928527906283
+    second: water_tileset (1)_17
+  - first:
+      213: -7037003420014857992
+    second: water_tileset (1)_18
+  - first:
+      213: -4358949923499750823
+    second: water_tileset (1)_19
+  - first:
+      213: 5358715758053894687
+    second: water_tileset (1)_20
+  - first:
+      213: -7574188192967584139
+    second: water_tileset (1)_21
+  - first:
+      213: 794271309062819808
+    second: water_tileset (1)_22
+  - first:
+      213: -5973966662922453146
+    second: water_tileset (1)_23
+  - first:
+      213: -8502569081609902879
+    second: water_tileset (1)_24
+  - first:
+      213: 8961374248612418056
+    second: water_tileset (1)_25
+  - first:
+      213: -3257052203160439070
+    second: water_tileset (1)_26
+  - first:
+      213: -1170138464337021085
+    second: water_tileset (1)_27
+  - first:
+      213: -3938876302192347779
+    second: water_tileset (1)_28
+  - first:
+      213: 7579109327650648167
+    second: water_tileset (1)_29
+  - first:
+      213: 6926257845404141441
+    second: water_tileset (1)_30
+  - first:
+      213: 4425430159214887252
+    second: water_tileset (1)_31
+  - first:
+      213: -8738685544339747377
+    second: water_tileset (1)_32
+  - first:
+      213: 6140742562500097529
+    second: water_tileset (1)_33
+  - first:
+      213: 6963413520917063028
+    second: water_tileset (1)_34
+  - first:
+      213: -462118148071473535
+    second: water_tileset (1)_35
+  - first:
+      213: 927274571845416478
+    second: water_tileset (1)_36
+  - first:
+      213: 2725273230802136603
+    second: water_tileset (1)_37
+  - first:
+      213: -6533622590692263002
+    second: water_tileset (1)_38
+  - first:
+      213: -4811694122482320435
+    second: water_tileset (1)_39
+  - first:
+      213: -4130773206806024350
+    second: water_tileset (1)_40
+  - first:
+      213: -5874883444654912235
+    second: water_tileset (1)_41
+  - first:
+      213: -8524638260630411462
+    second: water_tileset (1)_42
+  - first:
+      213: -3066576230572545632
+    second: water_tileset (1)_43
+  - first:
+      213: -1738741684119954268
+    second: water_tileset (1)_44
+  - first:
+      213: 8756632763186761219
+    second: water_tileset (1)_45
+  - first:
+      213: -4213679086393187587
+    second: water_tileset (1)_46
+  - first:
+      213: 6206130736707708807
+    second: water_tileset (1)_47
+  - first:
+      213: 1300705768098485210
+    second: water_tileset (1)_48
+  - first:
+      213: 1871253767998570796
+    second: water_tileset (1)_49
+  - first:
+      213: 9108537577628886914
+    second: water_tileset (1)_50
+  - first:
+      213: 651480792301643663
+    second: water_tileset (1)_51
+  - first:
+      213: 3186033784131418037
+    second: water_tileset (1)_52
+  - first:
+      213: 308201338777480282
+    second: water_tileset (1)_53
+  - first:
+      213: 4782260152728890695
+    second: water_tileset (1)_54
+  - first:
+      213: -3016393990029201095
+    second: water_tileset (1)_55
+  - first:
+      213: 2488351678124715340
+    second: water_tileset (1)_56
+  - first:
+      213: 4891254872504403061
+    second: water_tileset (1)_57
+  - first:
+      213: 3666825133412934467
+    second: water_tileset (1)_58
+  - first:
+      213: -3870213809637821813
+    second: water_tileset (1)_59
+  - first:
+      213: -1054069117264879460
+    second: water_tileset (1)_60
+  - first:
+      213: 3011435005130092860
+    second: water_tileset (1)_61
+  - first:
+      213: 3590141230813642594
+    second: water_tileset (1)_62
+  - first:
+      213: -2672330255160348790
+    second: water_tileset (1)_63
+  - first:
+      213: 5254939990418099563
+    second: water_tileset (1)_64
+  - first:
+      213: 6891350404426805050
+    second: water_tileset (1)_65
+  - first:
+      213: 6141341091987378376
+    second: water_tileset (1)_66
+  - first:
+      213: -4131277607448166036
+    second: water_tileset (1)_67
+  - first:
+      213: 7946157265939820365
+    second: water_tileset (1)_68
+  - first:
+      213: -929940370531903800
+    second: water_tileset (1)_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: water_tileset (1)_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1098
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cba342e40b3e8150800000000000000
+      internalID: 5876699455927069635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1098
+        width: 137
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb19c255a5e044690800000000000000
+      internalID: -7618948888465206853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1098
+        width: 143
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02a06f69a9426310800000000000000
+      internalID: 1396759826505179661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_3
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1098
+        width: 141
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf1a21ecd7b1c9c0800000000000000
+      internalID: -3908640842282557525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_4
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1098
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599b305a2654ebd90800000000000000
+      internalID: -7080145274202244715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_5
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1098
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d12762c9aba2d10800000000000000
+      internalID: 2101697355944434988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_6
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1098
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67189063f04c91270800000000000000
+      internalID: 8221818164351697270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1098
+        width: 137
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0da5179f90c76320800000000000000
+      internalID: 2551219505595788556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 944
+        width: 139
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318d33f54b935a920800000000000000
+      internalID: 3000868173566433299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 945
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9973f5b4046433ca0800000000000000
+      internalID: -6038405433417320551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 945
+        width: 141
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bab5c52801b0da50800000000000000
+      internalID: 6543924907120900787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_11
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 945
+        width: 141
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71fe412b07b08e310800000000000000
+      internalID: 1434409059969462039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_12
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 945
+        width: 141
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2c475ba9c984b90800000000000000
+      internalID: -7257378611224329486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_13
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 945
+        width: 141
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b94072e1a4dc49c0800000000000000
+      internalID: -3941541782102193741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_14
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 945
+        width: 140
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc16e51a4ddb7980800000000000000
+      internalID: -8539988958113293066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_15
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 945
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d54eb4431bbc6bd0800000000000000
+      internalID: -2635525990486489642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 790
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca54dc9853e9187e0800000000000000
+      internalID: -1764955626170137172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_17
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 791
+        width: 137
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be53f66a4d9658440800000000000000
+      internalID: 4937468928527906283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_18
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 791
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f03ec25caa875e90800000000000000
+      internalID: -7037003420014857992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_19
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 791
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ac418a326e183c0800000000000000
+      internalID: -4358949923499750823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_20
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 791
+        width: 141
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a271b179bfd5a40800000000000000
+      internalID: 5358715758053894687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_21
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 791
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5769530e7f313e690800000000000000
+      internalID: -7574188192967584139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_22
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 791
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef49ff1c81d50b00800000000000000
+      internalID: 794271309062819808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_23
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 791
+        width: 137
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f3b74b8f4381da0800000000000000
+      internalID: -5973966662922453146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 634
+        width: 139
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e42c64087ec00a80800000000000000
+      internalID: -8502569081609902879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_25
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 634
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80250e356623d5c70800000000000000
+      internalID: 8961374248612418056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_26
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 634
+        width: 141
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6f7bf1740acc2d0800000000000000
+      internalID: -3257052203160439070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_27
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 634
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367bb2f2445d2cfe0800000000000000
+      internalID: -1170138464337021085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_28
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 634
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75fe994fdc4659c0800000000000000
+      internalID: -3938876302192347779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_29
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 634
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760777417c76e2960800000000000000
+      internalID: 7579109327650648167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_30
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 634
+        width: 141
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187831240d20f1060800000000000000
+      internalID: 6926257845404141441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_31
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 634
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451cd4a68494a6d30800000000000000
+      internalID: 4425430159214887252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_32
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 475
+        width: 139
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcdc9c50cc3f9b680800000000000000
+      internalID: -8738685544339747377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_33
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 475
+        width: 138
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5b0f653dc483550800000000000000
+      internalID: 6140742562500097529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_34
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 476
+        width: 141
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475e96a14b303a060800000000000000
+      internalID: 6963413520917063028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_35
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 476
+        width: 141
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e30f32ef93699f0800000000000000
+      internalID: -462118148071473535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_36
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 476
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1639186f475edc00800000000000000
+      internalID: 927274571845416478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_37
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 476
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ea7d5709d12d520800000000000000
+      internalID: 2725273230802136603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_38
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 476
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abf151ded8e355a0800000000000000
+      internalID: -6533622590692263002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_39
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 475
+        width: 138
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb3b9560bd693db0800000000000000
+      internalID: -4811694122482320435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_40
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 321
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f20a877ab8ca6c0800000000000000
+      internalID: -4130773206806024350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_41
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 322
+        width: 137
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d458032a8387ea0800000000000000
+      internalID: -5874883444654912235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_42
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 322
+        width: 139
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37ab6cdaa662b980800000000000000
+      internalID: -8524638260630411462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_43
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 321
+        width: 140
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9211c6a255175d0800000000000000
+      internalID: -3066576230572545632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_44
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 321
+        width: 140
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac9dd986afbed7e0800000000000000
+      internalID: -1738741684119954268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_45
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 321
+        width: 140
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e4b4e7a1fc58970800000000000000
+      internalID: 8756632763186761219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_46
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 321
+        width: 139
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2aa0a22310685c0800000000000000
+      internalID: -4213679086393187587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_47
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 321
+        width: 138
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787a817060b902650800000000000000
+      internalID: 6206130736707708807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_48
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 163
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3dfc031090d0210800000000000000
+      internalID: 1300705768098485210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_49
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 163
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c218a2e336708f910800000000000000
+      internalID: 1871253767998570796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_50
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 163
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287edd1faa6086e70800000000000000
+      internalID: 9108537577628886914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_51
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 163
+        width: 141
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87212334568a0900800000000000000
+      internalID: 651480792301643663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_52
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 163
+        width: 147
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7fb89a8d0173c20800000000000000
+      internalID: 3186033784131418037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_53
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 299
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ca1251c73f64400800000000000000
+      internalID: 308201338777480282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_54
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 163
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d29ea75400e5240800000000000000
+      internalID: 4782260152728890695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_55
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 163
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931bfa9c5ad9326d0800000000000000
+      internalID: -3016393990029201095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_56
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 163
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4deedadaa6688220800000000000000
+      internalID: 2488351678124715340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_57
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 173
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574068d346a31e340800000000000000
+      internalID: 4891254872504403061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_58
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 128
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3436d8af70e23e230800000000000000
+      internalID: 3666825133412934467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_59
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 152
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82f9bf9b0d3a4ac0800000000000000
+      internalID: -3870213809637821813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_60
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 150
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90a7b8f8b13f51f0800000000000000
+      internalID: -1054069117264879460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_61
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 7
+        width: 140
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31b4f09e24cac920800000000000000
+      internalID: 3011435005130092860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_62
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 7
+        width: 139
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f71249d6eb2d130800000000000000
+      internalID: 3590141230813642594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_63
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 7
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f63a2aac9f9ead0800000000000000
+      internalID: -2672330255160348790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_64
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 7
+        width: 139
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d8dd4541c4de840800000000000000
+      internalID: 5254939990418099563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_65
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 7
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3faa9e4eaef2af50800000000000000
+      internalID: 6891350404426805050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_66
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 0
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0da685f2d6a3550800000000000000
+      internalID: 6141341091987378376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_67
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 7
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61c68b87e0caa6c0800000000000000
+      internalID: -4131277607448166036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_68
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 7
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f6bbdceeb664e60800000000000000
+      internalID: 7946157265939820365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_tileset (1)_69
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 7
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c69628f8203813f0800000000000000
+      internalID: -929940370531903800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      water_tileset (1)_0: 5876699455927069635
+      water_tileset (1)_1: -7618948888465206853
+      water_tileset (1)_10: 6543924907120900787
+      water_tileset (1)_11: 1434409059969462039
+      water_tileset (1)_12: -7257378611224329486
+      water_tileset (1)_13: -3941541782102193741
+      water_tileset (1)_14: -8539988958113293066
+      water_tileset (1)_15: -2635525990486489642
+      water_tileset (1)_16: -1764955626170137172
+      water_tileset (1)_17: 4937468928527906283
+      water_tileset (1)_18: -7037003420014857992
+      water_tileset (1)_19: -4358949923499750823
+      water_tileset (1)_2: 1396759826505179661
+      water_tileset (1)_20: 5358715758053894687
+      water_tileset (1)_21: -7574188192967584139
+      water_tileset (1)_22: 794271309062819808
+      water_tileset (1)_23: -5973966662922453146
+      water_tileset (1)_24: -8502569081609902879
+      water_tileset (1)_25: 8961374248612418056
+      water_tileset (1)_26: -3257052203160439070
+      water_tileset (1)_27: -1170138464337021085
+      water_tileset (1)_28: -3938876302192347779
+      water_tileset (1)_29: 7579109327650648167
+      water_tileset (1)_3: -3908640842282557525
+      water_tileset (1)_30: 6926257845404141441
+      water_tileset (1)_31: 4425430159214887252
+      water_tileset (1)_32: -8738685544339747377
+      water_tileset (1)_33: 6140742562500097529
+      water_tileset (1)_34: 6963413520917063028
+      water_tileset (1)_35: -462118148071473535
+      water_tileset (1)_36: 927274571845416478
+      water_tileset (1)_37: 2725273230802136603
+      water_tileset (1)_38: -6533622590692263002
+      water_tileset (1)_39: -4811694122482320435
+      water_tileset (1)_4: -7080145274202244715
+      water_tileset (1)_40: -4130773206806024350
+      water_tileset (1)_41: -5874883444654912235
+      water_tileset (1)_42: -8524638260630411462
+      water_tileset (1)_43: -3066576230572545632
+      water_tileset (1)_44: -1738741684119954268
+      water_tileset (1)_45: 8756632763186761219
+      water_tileset (1)_46: -4213679086393187587
+      water_tileset (1)_47: 6206130736707708807
+      water_tileset (1)_48: 1300705768098485210
+      water_tileset (1)_49: 1871253767998570796
+      water_tileset (1)_5: 2101697355944434988
+      water_tileset (1)_50: 9108537577628886914
+      water_tileset (1)_51: 651480792301643663
+      water_tileset (1)_52: 3186033784131418037
+      water_tileset (1)_53: 308201338777480282
+      water_tileset (1)_54: 4782260152728890695
+      water_tileset (1)_55: -3016393990029201095
+      water_tileset (1)_56: 2488351678124715340
+      water_tileset (1)_57: 4891254872504403061
+      water_tileset (1)_58: 3666825133412934467
+      water_tileset (1)_59: -3870213809637821813
+      water_tileset (1)_6: 8221818164351697270
+      water_tileset (1)_60: -1054069117264879460
+      water_tileset (1)_61: 3011435005130092860
+      water_tileset (1)_62: 3590141230813642594
+      water_tileset (1)_63: -2672330255160348790
+      water_tileset (1)_64: 5254939990418099563
+      water_tileset (1)_65: 6891350404426805050
+      water_tileset (1)_66: 6141341091987378376
+      water_tileset (1)_67: -4131277607448166036
+      water_tileset (1)_68: 7946157265939820365
+      water_tileset (1)_69: -929940370531903800
+      water_tileset (1)_7: 2551219505595788556
+      water_tileset (1)_8: 3000868173566433299
+      water_tileset (1)_9: -6038405433417320551
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

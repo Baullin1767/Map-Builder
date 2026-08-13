@@ -1,0 +1,11 @@
+{
+  "name": "MapBuilder.Editor",
+  "rootNamespace": "MapBuilderEditor",
+  "references": [
+    "MapBuilder.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": true
+}
