@@ -25,7 +25,7 @@ namespace MapBuilder
             catalog = tileCatalog;
         }
 
-public bool Render(MapLayout layout)
+        public bool Render(MapLayout layout)
         {
             if (layout == null || groundTilemap == null || waterTilemap == null ||
                 roadTilemap == null || catalog == null)
@@ -39,6 +39,7 @@ public bool Render(MapLayout layout)
             TileBase[] groundTiles = new TileBase[count];
             TileBase[] waterTiles = new TileBase[count];
             TileBase[] roadTiles = new TileBase[count];
+            bool[] visualWater = BuildVisualWater(layout);
 
             for (int y = 0; y < layout.Height; y++)
             for (int x = 0; x < layout.Width; x++)
@@ -49,9 +50,19 @@ public bool Render(MapLayout layout)
                 {
                     int rotationQuarterTurns;
                     Sprite waterSprite = catalog.GetWaterVisual(
-                        layout.WaterMasks[index], layout.WaterSeed, x, y,
+                        255, layout.WaterSeed, x, y,
                         out rotationQuarterTurns);
                     waterTiles[index] = TileFor(waterSprite, rotationQuarterTurns);
+                }
+                else if (visualWater[index])
+                {
+                    int rotationQuarterTurns;
+                    int shoreMask = VisualWaterMask(
+                        visualWater, layout.Width, layout.Height, x, y);
+                    Sprite shoreSprite = catalog.GetWaterVisual(
+                        shoreMask, layout.WaterSeed, x, y,
+                        out rotationQuarterTurns);
+                    waterTiles[index] = TileFor(shoreSprite, rotationQuarterTurns);
                 }
                 if (layout.Roads[index])
                 {
@@ -71,6 +82,54 @@ public bool Render(MapLayout layout)
             waterTilemap.CompressBounds();
             roadTilemap.CompressBounds();
             return true;
+        }
+
+        private static bool[] BuildVisualWater(MapLayout layout)
+        {
+            bool[] visual = (bool[])layout.Water.Clone();
+            for (int y = 0; y < layout.Height; y++)
+            for (int x = 0; x < layout.Width; x++)
+            {
+                if (!layout.Water[layout.Index(x, y)]) continue;
+                SetVisualWater(visual, layout.Width, layout.Height, x + 1, y);
+                SetVisualWater(visual, layout.Width, layout.Height, x - 1, y);
+                SetVisualWater(visual, layout.Width, layout.Height, x, y + 1);
+                SetVisualWater(visual, layout.Width, layout.Height, x, y - 1);
+            }
+            return visual;
+        }
+
+        private static void SetVisualWater(
+            bool[] visual, int width, int height, int x, int y)
+        {
+            if (x >= 0 && y >= 0 && x < width && y < height)
+                visual[y * width + x] = true;
+        }
+
+        private static int VisualWaterMask(
+            bool[] visual, int width, int height, int x, int y)
+        {
+            bool n = IsVisualWater(visual, width, height, x, y + 1);
+            bool e = IsVisualWater(visual, width, height, x + 1, y);
+            bool s = IsVisualWater(visual, width, height, x, y - 1);
+            bool w = IsVisualWater(visual, width, height, x - 1, y);
+            int mask = 0;
+            if (n) mask |= MapTopology.North;
+            if (e) mask |= MapTopology.East;
+            if (s) mask |= MapTopology.South;
+            if (w) mask |= MapTopology.West;
+            if (n && e) mask |= MapTopology.NorthEast;
+            if (s && e) mask |= MapTopology.SouthEast;
+            if (s && w) mask |= MapTopology.SouthWest;
+            if (n && w) mask |= MapTopology.NorthWest;
+            return MapTopology.CanonicalWaterMask(mask);
+        }
+
+        private static bool IsVisualWater(
+            bool[] visual, int width, int height, int x, int y)
+        {
+            return x >= 0 && y >= 0 && x < width && y < height &&
+                visual[y * width + x];
         }
 
         public void Clear()

@@ -83,7 +83,7 @@ namespace MapBuilder
             }
 
             ExpandWaterByOneCell(layout);
-            RemoveIsolated(layout.Water, layout.Width, layout.Height);
+            RemoveWaterTips(layout.Water, layout.Width, layout.Height);
         }
 
         private static void ExpandWaterByOneCell(MapLayout layout)
@@ -396,23 +396,31 @@ namespace MapBuilder
             }
         }
 
-        private static void RemoveIsolated(bool[] cells, int width, int height)
+        private static void RemoveWaterTips(bool[] cells, int width, int height)
         {
-            bool[] remove = new bool[cells.Length];
-            for (int y = 0; y < height; y++)
-            for (int x = 0; x < width; x++)
+            bool changed;
+            do
             {
-                int index = y * width + x;
-                if (!cells[index]) continue;
-                int neighbors = 0;
-                if (y + 1 < height && cells[index + width]) neighbors++;
-                if (x + 1 < width && cells[index + 1]) neighbors++;
-                if (y > 0 && cells[index - width]) neighbors++;
-                if (x > 0 && cells[index - 1]) neighbors++;
-                remove[index] = neighbors == 0;
+                changed = false;
+                bool[] remove = new bool[cells.Length];
+                for (int y = 0; y < height; y++)
+                for (int x = 0; x < width; x++)
+                {
+                    int index = y * width + x;
+                    if (!cells[index]) continue;
+                    int neighbors = 0;
+                    if (y + 1 < height && cells[index + width]) neighbors++;
+                    if (x + 1 < width && cells[index + 1]) neighbors++;
+                    if (y > 0 && cells[index - width]) neighbors++;
+                    if (x > 0 && cells[index - 1]) neighbors++;
+                    if (neighbors > 1) continue;
+                    remove[index] = true;
+                    changed = true;
+                }
+                for (int i = 0; i < cells.Length; i++)
+                    if (remove[i]) cells[i] = false;
             }
-            for (int i = 0; i < cells.Length; i++)
-                if (remove[i]) cells[i] = false;
+            while (changed);
         }
 
         private static void BuildMasks(MapLayout layout)

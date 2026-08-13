@@ -16,6 +16,7 @@ namespace MapBuilderEditor
         private const int SheetSize = 1254;
         private const int CellSize = 156;
         private const int WaterTileSize = 68;
+        private const int WaterPixelsPerUnit = 85;
         private const int Offset = 3;
 
         [MenuItem("Tools/Map Builder/Build Prototype")]
@@ -23,7 +24,8 @@ namespace MapBuilderEditor
         {
             Sprite[] grass = LoadExistingSheet(Root + "/grass_tileset.png", 64, CellSize);
             Sprite[] roads = LoadExistingSheet(Root + "/roads_tileset.png", 64, CellSize);
-            Sprite[] water = LoadExistingSheet(Root + "/water_tileset.png", 256, 78);
+            Sprite[] water = LoadExistingSheet(
+                Root + "/water_tileset.png", 256, WaterPixelsPerUnit);
 
             MapTileCatalog catalog = AssetDatabase.LoadAssetAtPath<MapTileCatalog>(CatalogPath);
             if (catalog == null)
@@ -45,7 +47,8 @@ namespace MapBuilderEditor
         [MenuItem("Tools/Map Builder/Rebuild Water Catalog")]
         public static void RebuildWaterCatalog()
         {
-            Sprite[] water = LoadExistingSheet(Root + "/water_tileset.png", 256, 78);
+            Sprite[] water = LoadExistingSheet(
+                Root + "/water_tileset.png", 256, WaterPixelsPerUnit);
             if (water.Any(sprite =>
                 Mathf.RoundToInt(sprite.rect.width) != WaterTileSize ||
                 Mathf.RoundToInt(sprite.rect.height) != WaterTileSize))
@@ -61,6 +64,30 @@ namespace MapBuilderEditor
             EditorUtility.SetDirty(catalog);
             AssetDatabase.SaveAssets();
             Debug.Log("Water catalog rebuilt from 256 sprites sliced at 68x68.");
+        }
+
+        [MenuItem("Tools/Map Builder/Rebuild Road Catalog")]
+        public static void RebuildRoadCatalog()
+        {
+            Sprite[] roads = LoadExistingSheet(Root + "/roads_tileset.png", 64, CellSize);
+            MapTileCatalog catalog = AssetDatabase.LoadAssetAtPath<MapTileCatalog>(CatalogPath);
+            if (catalog == null)
+                throw new InvalidOperationException("Tile catalog not found: " + CatalogPath);
+
+            catalog.ConfigureRoads(BuildRoadGroups(roads));
+            EditorUtility.SetDirty(catalog);
+            AssetDatabase.SaveAssets();
+
+            MapGenerationController controller =
+                UnityEngine.Object.FindAnyObjectByType<MapGenerationController>();
+            if (controller != null)
+            {
+                controller.GenerateDebugMap();
+                EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
+                EditorSceneManager.SaveOpenScenes();
+            }
+
+            Debug.Log("Road catalog rebuilt from 64 sprites using sprite-local edge sampling.");
         }
 
         private static Sprite[] LoadExistingSheet(string path, int expectedCount, int pixelsPerUnit)
@@ -153,6 +180,21 @@ namespace MapBuilderEditor
             for (int i = 0; i < sprites.Length; i++)
                 Add(classified, ClassifyRoad(sprites[i]), sprites[i]);
 
+            // The atlas' native vertical straight has slightly different edge
+            // geometry. Reusing the horizontal family through a quarter turn
+            // keeps straight runs visually continuous in both orientations.
+            classified.Remove(MapTopology.North | MapTopology.South);
+
+            // Several decorative diagonal patches expose the same edge mask as
+            // a road corner but do not join the narrow road family cleanly.
+            // Keep one canonical corner and rotate it for all four directions.
+            SetRoadGroup(
+                classified, sprites, MapTopology.South | MapTopology.West,
+                "roads_tileset_5");
+            classified.Remove(MapTopology.North | MapTopology.East);
+            classified.Remove(MapTopology.East | MapTopology.South);
+            classified.Remove(MapTopology.North | MapTopology.West);
+
             List<SpriteMaskVariants> result = new List<SpriteMaskVariants>();
             for (int target = 0; target < 16; target++)
             {
@@ -171,6 +213,20 @@ namespace MapBuilderEditor
                 });
             }
             return result;
+        }
+
+        private static void SetRoadGroup(
+            Dictionary<int, List<Sprite>> groups, Sprite[] sprites, int mask,
+            params string[] spriteNames)
+        {
+            HashSet<string> requested = new HashSet<string>(spriteNames);
+            List<Sprite> selected = sprites
+                .Where(sprite => requested.Contains(sprite.name))
+                .ToList();
+            if (selected.Count != requested.Count)
+                throw new InvalidOperationException(
+                    "One or more curated road sprites are missing for mask " + mask + ".");
+            groups[mask] = selected;
         }
 
         private static bool TryFindRotatedRoad(
@@ -211,6 +267,11 @@ namespace MapBuilderEditor
             Dictionary<int, List<Sprite>> classified = new Dictionary<int, List<Sprite>>();
             for (int i = 0; i < sprites.Length; i++)
             {
+                if (IsCleanInteriorWater(sprites[i]) ||
+                    !IsCanonicalShoreSprite(sprites[i]))
+                {
+                    continue;
+                }
                 int mask = MapTopology.CanonicalWaterMask(ClassifyWater(sprites[i]));
                 Add(classified, mask, sprites[i]);
             }
@@ -223,6 +284,22 @@ namespace MapBuilderEditor
                 throw new InvalidOperationException(
                     "Water tileset does not contain a clean interior-water sprite.");
             classified[MapTopology.CanonicalWaterMask(255)] = cleanInterior;
+
+            // Use one coherent source family for the regular coast. The masks
+            // on individual 68x68 quarters are ambiguous along the cut line;
+            // explicit representatives keep straight runs and corners joined.
+            SetWaterGroup(classified, sprites, 0x6E,
+                "water_tileset_3_0", "water_tileset_3_1",
+                "water_tileset_4_0", "water_tileset_4_1");
+            classified.Remove(0x37);
+            classified.Remove(0x9B);
+            classified.Remove(0xCD);
+
+            SetWaterGroup(classified, sprites, 0x4C,
+                "water_tileset_5_3", "water_tileset_17_1");
+            classified.Remove(0x13);
+            classified.Remove(0x26);
+            classified.Remove(0x89);
 
             HashSet<int> canonical = new HashSet<int>();
             for (int mask = 0; mask < 256; mask++)
@@ -249,6 +326,20 @@ namespace MapBuilderEditor
                 });
             }
             return result;
+        }
+
+        private static void SetWaterGroup(
+            Dictionary<int, List<Sprite>> groups, Sprite[] sprites, int mask,
+            params string[] spriteNames)
+        {
+            HashSet<string> requested = new HashSet<string>(spriteNames);
+            List<Sprite> selected = sprites
+                .Where(sprite => requested.Contains(sprite.name))
+                .ToList();
+            if (selected.Count != requested.Count)
+                throw new InvalidOperationException(
+                    "One or more curated water sprites are missing for mask " + mask + ".");
+            groups[MapTopology.CanonicalWaterMask(mask)] = selected;
         }
 
         private static bool TryFindRotatedWater(
@@ -375,19 +466,21 @@ namespace MapBuilderEditor
         {
             int matches = 0;
             int count = 0;
-            int center = CellSize / 2;
-            const int halfSpan = 30;
-            const int depthStart = 10;
-            const int depthEnd = 16;
+            int size = Mathf.Min(rect.width, rect.height);
+            int center = size / 2;
+            int halfSpan = Mathf.Max(1, Mathf.RoundToInt(size * (30f / CellSize)));
+            int depthStart = Mathf.Max(0, Mathf.RoundToInt(size * (10f / CellSize)));
+            int depthEnd = Mathf.Min(
+                size - 1, Mathf.RoundToInt(size * (16f / CellSize)));
 
             for (int depth = depthStart; depth <= depthEnd; depth++)
             for (int tangent = center - halfSpan; tangent <= center + halfSpan; tangent++)
             {
                 int x;
                 int y;
-                if (direction == Direction.North) { x = tangent; y = CellSize - 1 - depth; }
+                if (direction == Direction.North) { x = tangent; y = size - 1 - depth; }
                 else if (direction == Direction.South) { x = tangent; y = depth; }
-                else if (direction == Direction.East) { x = CellSize - 1 - depth; y = tangent; }
+                else if (direction == Direction.East) { x = size - 1 - depth; y = tangent; }
                 else { x = depth; y = tangent; }
 
                 if (IsRoadPixel(texture.GetPixel(rect.x + x, rect.y + y))) matches++;
@@ -459,6 +552,34 @@ namespace MapBuilderEditor
                     return false;
             }
             return true;
+        }
+
+        private static bool IsCanonicalShoreSprite(Sprite sprite)
+        {
+            // Blocks 0-23 are the atlas' regular coast shapes. Later blocks are
+            // islands, ponds and channels; their quarters can share an edge mask
+            // with a coast while still leaving a disconnected rock fragment.
+            string[] nameParts = sprite.name.Split('_');
+            int blockIndex;
+            if (nameParts.Length < 4 ||
+                !int.TryParse(nameParts[nameParts.Length - 2], out blockIndex) ||
+                blockIndex >= 24)
+            {
+                return false;
+            }
+
+            Texture2D texture = sprite.texture;
+            RectInt rect = RectToInt(sprite.rect);
+            int landPixels = 0;
+            for (int y = 0; y < rect.height; y++)
+            for (int x = 0; x < rect.width; x++)
+            {
+                Color32 color = texture.GetPixel(rect.x + x, rect.y + y);
+                if (color.a > 64 && !IsWaterPixel(color)) landPixels++;
+            }
+
+            float landCoverage = landPixels / (float)(rect.width * rect.height);
+            return landCoverage >= 0.08f && landCoverage <= 0.75f;
         }
 
         private static bool IsWaterPixel(Color32 color)
