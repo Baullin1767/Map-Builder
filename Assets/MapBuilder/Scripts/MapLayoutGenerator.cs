@@ -82,7 +82,23 @@ namespace MapBuilder
                     layout.WaterSeed ^ (ulong)(0x1000 + lake * 977));
             }
 
+            ExpandWaterByOneCell(layout);
             RemoveIsolated(layout.Water, layout.Width, layout.Height);
+        }
+
+        private static void ExpandWaterByOneCell(MapLayout layout)
+        {
+            bool[] source = (bool[])layout.Water.Clone();
+            for (int y = 0; y < layout.Height; y++)
+            for (int x = 0; x < layout.Width; x++)
+            {
+                if (!source[layout.Index(x, y)]) continue;
+                SetWater(layout, x, y);
+                SetWater(layout, x + 1, y);
+                SetWater(layout, x - 1, y);
+                SetWater(layout, x, y + 1);
+                SetWater(layout, x, y - 1);
+            }
         }
 
         private static void SetWater(MapLayout layout, int x, int y)

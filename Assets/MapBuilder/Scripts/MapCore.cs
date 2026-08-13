@@ -185,10 +185,13 @@ namespace MapBuilder
             if (e) mask |= East;
             if (s) mask |= South;
             if (w) mask |= West;
-            if (n && e && layout.IsWater(x + 1, y + 1)) mask |= NorthEast;
-            if (s && e && layout.IsWater(x + 1, y - 1)) mask |= SouthEast;
-            if (s && w && layout.IsWater(x - 1, y - 1)) mask |= SouthWest;
-            if (n && w && layout.IsWater(x - 1, y + 1)) mask |= NorthWest;
+            // The 68x68 water sprites contain one continuous shoreline per
+            // cardinal shape. Fill compatible diagonal bits so the renderer
+            // never substitutes a fragmented concave variant at the coast.
+            if (n && e) mask |= NorthEast;
+            if (s && e) mask |= SouthEast;
+            if (s && w) mask |= SouthWest;
+            if (n && w) mask |= NorthWest;
             return (byte)mask;
         }
 

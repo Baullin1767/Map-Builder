@@ -353,10 +353,10 @@ TextureImporter:
       name: roads_tileset_1
       rect:
         serializedVersion: 2
-        x: 170
+        x: 169
         y: 1100
-        width: 135
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,7 +378,7 @@ TextureImporter:
         x: 323
         y: 1100
         width: 136
-        height: 135
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -419,10 +419,10 @@ TextureImporter:
       name: roads_tileset_4
       rect:
         serializedVersion: 2
-        x: 635
+        x: 636
         y: 1100
-        width: 137
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,9 +441,9 @@ TextureImporter:
       name: roads_tileset_5
       rect:
         serializedVersion: 2
-        x: 792
+        x: 793
         y: 1100
-        width: 137
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -465,7 +465,7 @@ TextureImporter:
         serializedVersion: 2
         x: 948
         y: 1100
-        width: 137
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -485,10 +485,10 @@ TextureImporter:
       name: roads_tileset_7
       rect:
         serializedVersion: 2
-        x: 1104
+        x: 1102
         y: 1100
-        width: 134
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,7 +510,7 @@ TextureImporter:
         x: 16
         y: 946
         width: 136
-        height: 135
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -529,10 +529,10 @@ TextureImporter:
       name: roads_tileset_9
       rect:
         serializedVersion: 2
-        x: 170
+        x: 168
         y: 946
-        width: 134
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,10 +573,10 @@ TextureImporter:
       name: roads_tileset_11
       rect:
         serializedVersion: 2
-        x: 479
+        x: 480
         y: 945
-        width: 137
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -597,8 +597,8 @@ TextureImporter:
         serializedVersion: 2
         x: 636
         y: 945
-        width: 137
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,7 +620,7 @@ TextureImporter:
         x: 793
         y: 945
         width: 136
-        height: 135
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -639,9 +639,9 @@ TextureImporter:
       name: roads_tileset_14
       rect:
         serializedVersion: 2
-        x: 948
+        x: 949
         y: 945
-        width: 137
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -661,9 +661,9 @@ TextureImporter:
       name: roads_tileset_15
       rect:
         serializedVersion: 2
-        x: 1104
+        x: 1103
         y: 945
-        width: 135
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -683,9 +683,9 @@ TextureImporter:
       name: roads_tileset_16
       rect:
         serializedVersion: 2
-        x: 16
+        x: 15
         y: 790
-        width: 135
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -705,9 +705,9 @@ TextureImporter:
       name: roads_tileset_17
       rect:
         serializedVersion: 2
-        x: 170
+        x: 168
         y: 790
-        width: 134
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -773,7 +773,7 @@ TextureImporter:
         serializedVersion: 2
         x: 636
         y: 790
-        width: 137
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -815,9 +815,9 @@ TextureImporter:
       name: roads_tileset_22
       rect:
         serializedVersion: 2
-        x: 948
+        x: 949
         y: 790
-        width: 137
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -837,9 +837,9 @@ TextureImporter:
       name: roads_tileset_23
       rect:
         serializedVersion: 2
-        x: 1105
+        x: 1102
         y: 790
-        width: 133
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -859,10 +859,10 @@ TextureImporter:
       name: roads_tileset_24
       rect:
         serializedVersion: 2
-        x: 16
+        x: 15
         y: 634
-        width: 135
-        height: 137
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -881,10 +881,10 @@ TextureImporter:
       name: roads_tileset_25
       rect:
         serializedVersion: 2
-        x: 170
-        y: 634
-        width: 134
-        height: 137
+        x: 168
+        y: 635
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -906,7 +906,7 @@ TextureImporter:
         x: 323
         y: 634
         width: 136
-        height: 137
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -928,7 +928,7 @@ TextureImporter:
         x: 480
         y: 634
         width: 136
-        height: 137
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -949,8 +949,8 @@ TextureImporter:
         serializedVersion: 2
         x: 636
         y: 634
-        width: 137
-        height: 137
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -972,7 +972,7 @@ TextureImporter:
         x: 793
         y: 634
         width: 136
-        height: 137
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -991,10 +991,10 @@ TextureImporter:
       name: roads_tileset_30
       rect:
         serializedVersion: 2
-        x: 948
+        x: 949
         y: 634
-        width: 137
-        height: 137
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1013,10 +1013,10 @@ TextureImporter:
       name: roads_tileset_31
       rect:
         serializedVersion: 2
-        x: 1104
+        x: 1103
         y: 634
-        width: 135
-        height: 137
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1035,9 +1035,9 @@ TextureImporter:
       name: roads_tileset_32
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 478
-        width: 137
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1057,9 +1057,9 @@ TextureImporter:
       name: roads_tileset_33
       rect:
         serializedVersion: 2
-        x: 170
+        x: 169
         y: 478
-        width: 135
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1081,7 +1081,7 @@ TextureImporter:
         serializedVersion: 2
         x: 323
         y: 478
-        width: 137
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1101,9 +1101,9 @@ TextureImporter:
       name: roads_tileset_35
       rect:
         serializedVersion: 2
-        x: 479
+        x: 480
         y: 478
-        width: 137
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1123,9 +1123,9 @@ TextureImporter:
       name: roads_tileset_36
       rect:
         serializedVersion: 2
-        x: 636
+        x: 637
         y: 478
-        width: 137
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1167,9 +1167,9 @@ TextureImporter:
       name: roads_tileset_38
       rect:
         serializedVersion: 2
-        x: 948
+        x: 949
         y: 478
-        width: 137
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1189,9 +1189,9 @@ TextureImporter:
       name: roads_tileset_39
       rect:
         serializedVersion: 2
-        x: 1105
+        x: 1102
         y: 478
-        width: 133
+        width: 136
         height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1214,7 +1214,7 @@ TextureImporter:
         x: 16
         y: 323
         width: 136
-        height: 134
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1233,10 +1233,10 @@ TextureImporter:
       name: roads_tileset_41
       rect:
         serializedVersion: 2
-        x: 171
+        x: 170
         y: 323
-        width: 135
-        height: 134
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1258,7 +1258,7 @@ TextureImporter:
         x: 325
         y: 323
         width: 136
-        height: 134
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1279,8 +1279,8 @@ TextureImporter:
         serializedVersion: 2
         x: 480
         y: 323
-        width: 137
-        height: 134
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1302,7 +1302,7 @@ TextureImporter:
         x: 636
         y: 323
         width: 136
-        height: 134
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1321,10 +1321,10 @@ TextureImporter:
       name: roads_tileset_45
       rect:
         serializedVersion: 2
-        x: 792
+        x: 793
         y: 323
-        width: 137
-        height: 134
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1346,7 +1346,7 @@ TextureImporter:
         x: 949
         y: 323
         width: 136
-        height: 134
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1365,10 +1365,10 @@ TextureImporter:
       name: roads_tileset_47
       rect:
         serializedVersion: 2
-        x: 1104
+        x: 1102
         y: 323
-        width: 134
-        height: 134
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1390,7 +1390,7 @@ TextureImporter:
         x: 16
         y: 167
         width: 136
-        height: 135
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1409,10 +1409,10 @@ TextureImporter:
       name: roads_tileset_49
       rect:
         serializedVersion: 2
-        x: 171
+        x: 169
         y: 167
-        width: 134
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1434,7 +1434,7 @@ TextureImporter:
         x: 324
         y: 167
         width: 136
-        height: 135
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1455,8 +1455,8 @@ TextureImporter:
         serializedVersion: 2
         x: 479
         y: 167
-        width: 137
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1478,7 +1478,7 @@ TextureImporter:
         x: 636
         y: 167
         width: 136
-        height: 135
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1500,7 +1500,7 @@ TextureImporter:
         x: 792
         y: 167
         width: 136
-        height: 135
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1519,10 +1519,10 @@ TextureImporter:
       name: roads_tileset_54
       rect:
         serializedVersion: 2
-        x: 949
+        x: 948
         y: 167
-        width: 135
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1541,10 +1541,10 @@ TextureImporter:
       name: roads_tileset_55
       rect:
         serializedVersion: 2
-        x: 1104
+        x: 1102
         y: 167
-        width: 134
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1563,10 +1563,10 @@ TextureImporter:
       name: roads_tileset_56
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 13
-        width: 137
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1585,10 +1585,10 @@ TextureImporter:
       name: roads_tileset_57
       rect:
         serializedVersion: 2
-        x: 171
+        x: 169
         y: 13
-        width: 134
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1610,7 +1610,7 @@ TextureImporter:
         x: 324
         y: 13
         width: 136
-        height: 135
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1631,8 +1631,8 @@ TextureImporter:
         serializedVersion: 2
         x: 479
         y: 13
-        width: 137
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1654,7 +1654,7 @@ TextureImporter:
         x: 636
         y: 13
         width: 136
-        height: 135
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1676,7 +1676,7 @@ TextureImporter:
         x: 793
         y: 13
         width: 136
-        height: 135
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1697,8 +1697,8 @@ TextureImporter:
         serializedVersion: 2
         x: 948
         y: 13
-        width: 137
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1717,10 +1717,10 @@ TextureImporter:
       name: roads_tileset_63
       rect:
         serializedVersion: 2
-        x: 1104
+        x: 1102
         y: 13
-        width: 134
-        height: 135
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

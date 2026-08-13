@@ -31,6 +31,11 @@ namespace MapBuilder
             waterVariants = water ?? new List<SpriteMaskVariants>();
         }
 
+        public void ConfigureWater(List<SpriteMaskVariants> water)
+        {
+            waterVariants = water ?? new List<SpriteMaskVariants>();
+        }
+
         public Sprite GetGrassSprite(int variant)
         {
             if (grassSprites.Count == 0) return null;

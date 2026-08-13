@@ -15,14 +15,15 @@ namespace MapBuilderEditor
         private const string CatalogPath = "Assets/MapBuilder/MapTileCatalog.asset";
         private const int SheetSize = 1254;
         private const int CellSize = 156;
+        private const int WaterTileSize = 68;
         private const int Offset = 3;
 
         [MenuItem("Tools/Map Builder/Build Prototype")]
         public static void BuildPrototype()
         {
-            Sprite[] grass = ImportSheet(Root + "/grass_tileset.png");
-            Sprite[] roads = ImportSheet(Root + "/roads_tileset.png");
-            Sprite[] water = ImportSheet(Root + "/water_tileset.png");
+            Sprite[] grass = LoadExistingSheet(Root + "/grass_tileset.png", 64, CellSize);
+            Sprite[] roads = LoadExistingSheet(Root + "/roads_tileset.png", 64, CellSize);
+            Sprite[] water = LoadExistingSheet(Root + "/water_tileset.png", 256, 78);
 
             MapTileCatalog catalog = AssetDatabase.LoadAssetAtPath<MapTileCatalog>(CatalogPath);
             if (catalog == null)
@@ -39,6 +40,53 @@ namespace MapBuilderEditor
 
             BuildScene(catalog);
             Debug.Log("Map Builder prototype created: 64x64, 3 Tilemaps, deterministic hash contract.");
+        }
+
+        [MenuItem("Tools/Map Builder/Rebuild Water Catalog")]
+        public static void RebuildWaterCatalog()
+        {
+            Sprite[] water = LoadExistingSheet(Root + "/water_tileset.png", 256, 78);
+            if (water.Any(sprite =>
+                Mathf.RoundToInt(sprite.rect.width) != WaterTileSize ||
+                Mathf.RoundToInt(sprite.rect.height) != WaterTileSize))
+            {
+                throw new InvalidOperationException(
+                    "Water tileset must contain only 68x68 sprites.");
+            }
+            MapTileCatalog catalog = AssetDatabase.LoadAssetAtPath<MapTileCatalog>(CatalogPath);
+            if (catalog == null)
+                throw new InvalidOperationException("Tile catalog not found: " + CatalogPath);
+
+            catalog.ConfigureWater(BuildWaterGroups(water));
+            EditorUtility.SetDirty(catalog);
+            AssetDatabase.SaveAssets();
+            Debug.Log("Water catalog rebuilt from 256 sprites sliced at 68x68.");
+        }
+
+        private static Sprite[] LoadExistingSheet(string path, int expectedCount, int pixelsPerUnit)
+        {
+            TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
+            if (importer == null)
+                throw new InvalidOperationException("Texture not found: " + path);
+
+            importer.textureType = TextureImporterType.Sprite;
+            importer.spriteImportMode = SpriteImportMode.Multiple;
+            importer.spritePixelsPerUnit = pixelsPerUnit;
+            importer.filterMode = FilterMode.Point;
+            importer.textureCompression = TextureImporterCompression.Uncompressed;
+            importer.mipmapEnabled = false;
+            importer.alphaIsTransparency = true;
+            importer.isReadable = true;
+            importer.SaveAndReimport();
+
+            Sprite[] sprites = AssetDatabase.LoadAllAssetsAtPath(path)
+                .OfType<Sprite>()
+                .OrderBy(sprite => sprite.name, StringComparer.Ordinal)
+                .ToArray();
+            if (sprites.Length != expectedCount)
+                throw new InvalidOperationException(
+                    path + " produced " + sprites.Length + " sprites instead of " + expectedCount + ".");
+            return sprites;
         }
 
         private static Sprite[] ImportSheet(string path)
@@ -158,7 +206,7 @@ namespace MapBuilderEditor
             return mask;
         }
 
-private static List<SpriteMaskVariants> BuildWaterGroups(Sprite[] sprites)
+        private static List<SpriteMaskVariants> BuildWaterGroups(Sprite[] sprites)
         {
             Dictionary<int, List<Sprite>> classified = new Dictionary<int, List<Sprite>>();
             for (int i = 0; i < sprites.Length; i++)
@@ -166,6 +214,15 @@ private static List<SpriteMaskVariants> BuildWaterGroups(Sprite[] sprites)
                 int mask = MapTopology.CanonicalWaterMask(ClassifyWater(sprites[i]));
                 Add(classified, mask, sprites[i]);
             }
+
+            // Edge sampling intentionally tolerates small details, so a shoreline
+            // quarter can otherwise look like a fully surrounded water tile. Never
+            // let those sprites into the interior pool: every pixel must be water.
+            List<Sprite> cleanInterior = sprites.Where(IsCleanInteriorWater).ToList();
+            if (cleanInterior.Count == 0)
+                throw new InvalidOperationException(
+                    "Water tileset does not contain a clean interior-water sprite.");
+            classified[MapTopology.CanonicalWaterMask(255)] = cleanInterior;
 
             HashSet<int> canonical = new HashSet<int>();
             for (int mask = 0; mask < 256; mask++)
@@ -194,7 +251,7 @@ private static List<SpriteMaskVariants> BuildWaterGroups(Sprite[] sprites)
             return result;
         }
 
-private static bool TryFindRotatedWater(
+        private static bool TryFindRotatedWater(
             Dictionary<int, List<Sprite>> groups, int target,
             out List<Sprite> variants, out int rotationQuarterTurns)
         {
@@ -213,7 +270,7 @@ private static bool TryFindRotatedWater(
             return false;
         }
 
-private static int RotateWaterMaskClockwise(int mask, int turns)
+        private static int RotateWaterMaskClockwise(int mask, int turns)
         {
             for (int i = 0; i < turns; i++)
             {
@@ -287,26 +344,26 @@ private static int RotateWaterMaskClockwise(int mask, int turns)
         }
 
 
-private static int ClassifyWater(Sprite sprite)
+        private static int ClassifyWater(Sprite sprite)
         {
             Texture2D texture = sprite.texture;
             RectInt r = RectToInt(sprite.rect);
             int mask = 0;
-            bool n = FeatureRatio(texture, r, Direction.North, IsWaterPixel) > 0.32f;
-            bool e = FeatureRatio(texture, r, Direction.East, IsWaterPixel) > 0.32f;
-            bool s = FeatureRatio(texture, r, Direction.South, IsWaterPixel) > 0.32f;
-            bool w = FeatureRatio(texture, r, Direction.West, IsWaterPixel) > 0.32f;
+            bool n = FeatureRatio(texture, r, Direction.North, IsWaterPixel) > 0.5f;
+            bool e = FeatureRatio(texture, r, Direction.East, IsWaterPixel) > 0.5f;
+            bool s = FeatureRatio(texture, r, Direction.South, IsWaterPixel) > 0.5f;
+            bool w = FeatureRatio(texture, r, Direction.West, IsWaterPixel) > 0.5f;
             if (n) mask |= MapTopology.North;
             if (e) mask |= MapTopology.East;
             if (s) mask |= MapTopology.South;
             if (w) mask |= MapTopology.West;
-            if (n && e && CornerRatio(texture, r, 1, 1, IsWaterPixel) > 0.32f)
+            if (n && e && CornerRatio(texture, r, 1, 1, IsWaterPixel) > 0.5f)
                 mask |= MapTopology.NorthEast;
-            if (s && e && CornerRatio(texture, r, 1, -1, IsWaterPixel) > 0.32f)
+            if (s && e && CornerRatio(texture, r, 1, -1, IsWaterPixel) > 0.5f)
                 mask |= MapTopology.SouthEast;
-            if (s && w && CornerRatio(texture, r, -1, -1, IsWaterPixel) > 0.32f)
+            if (s && w && CornerRatio(texture, r, -1, -1, IsWaterPixel) > 0.5f)
                 mask |= MapTopology.SouthWest;
-            if (n && w && CornerRatio(texture, r, -1, 1, IsWaterPixel) > 0.32f)
+            if (n && w && CornerRatio(texture, r, -1, 1, IsWaterPixel) > 0.5f)
                 mask |= MapTopology.NorthWest;
             return mask;
         }
@@ -339,25 +396,24 @@ private static int ClassifyWater(Sprite sprite)
             return count == 0 ? 0f : matches / (float)count;
         }
 
-private static float FeatureRatio(
+        private static float FeatureRatio(
             Texture2D texture, RectInt rect, Direction direction, Func<Color32, bool> predicate)
         {
             int matches = 0;
             int count = 0;
-            int center = CellSize / 2;
-            const int halfSpan = 30;
-            const int depthStart = 14;
-            const int depthEnd = 20;
+            int size = Mathf.Min(rect.width, rect.height);
 
-            for (int depth = depthStart; depth <= depthEnd; depth++)
-            for (int tangent = center - halfSpan; tangent <= center + halfSpan; tangent++)
+            // Connectivity is decided on the actual outer edge. Sampling only
+            // the center or several pixels inward admits cropped shoreline
+            // fragments whose land lies outside this 68x68 quarter.
+            for (int tangent = 0; tangent < size; tangent++)
             {
                 int x;
                 int y;
-                if (direction == Direction.North) { x = tangent; y = CellSize - 1 - depth; }
-                else if (direction == Direction.South) { x = tangent; y = depth; }
-                else if (direction == Direction.East) { x = CellSize - 1 - depth; y = tangent; }
-                else { x = depth; y = tangent; }
+                if (direction == Direction.North) { x = tangent; y = size - 1; }
+                else if (direction == Direction.South) { x = tangent; y = 0; }
+                else if (direction == Direction.East) { x = size - 1; y = tangent; }
+                else { x = 0; y = tangent; }
 
                 if (predicate(texture.GetPixel(rect.x + x, rect.y + y))) matches++;
                 count++;
@@ -371,13 +427,14 @@ private static float FeatureRatio(
         {
             int matches = 0;
             int count = 0;
-            int low = 12;
-            int high = 48;
+            int size = Mathf.Min(rect.width, rect.height);
+            int low = Mathf.Max(3, Mathf.RoundToInt(size * 0.07f));
+            int high = Mathf.Max(low + 1, Mathf.RoundToInt(size * 0.31f));
             for (int oy = low; oy <= high; oy++)
             for (int ox = low; ox <= high; ox++)
             {
-                int x = xSign > 0 ? CellSize - 1 - ox : ox;
-                int y = ySign > 0 ? CellSize - 1 - oy : oy;
+                int x = xSign > 0 ? size - 1 - ox : ox;
+                int y = ySign > 0 ? size - 1 - oy : oy;
                 if (predicate(texture.GetPixel(rect.x + x, rect.y + y))) matches++;
                 count++;
             }
@@ -389,6 +446,19 @@ private static float FeatureRatio(
             return new RectInt(
                 Mathf.RoundToInt(rect.x), Mathf.RoundToInt(rect.y),
                 Mathf.RoundToInt(rect.width), Mathf.RoundToInt(rect.height));
+        }
+
+        private static bool IsCleanInteriorWater(Sprite sprite)
+        {
+            Texture2D texture = sprite.texture;
+            RectInt rect = RectToInt(sprite.rect);
+            for (int y = 0; y < rect.height; y++)
+            for (int x = 0; x < rect.width; x++)
+            {
+                if (!IsWaterPixel(texture.GetPixel(rect.x + x, rect.y + y)))
+                    return false;
+            }
+            return true;
         }
 
         private static bool IsWaterPixel(Color32 color)
@@ -410,7 +480,7 @@ private static float FeatureRatio(
 
             GameObject root = new GameObject("Generated Map");
             Grid grid = root.AddComponent<Grid>();
-            grid.cellSize = Vector3.one;
+            grid.cellSize = new Vector3(0.8f, 0.8f, 1f);
             grid.cellGap = Vector3.zero;
             grid.cellLayout = GridLayout.CellLayout.Rectangle;
 
