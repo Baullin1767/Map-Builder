@@ -65,5 +65,12 @@ namespace MapBuilder
 
         [ContextMenu("Generate Debug Map")]
         public void GenerateDebugMap() { GenerateFromHash(debugHash); }
+
+        [ContextMenu("Generate Random Map")]
+        public void GenerateRandomMap()
+        {
+            debugHash = Guid.NewGuid().ToString("N");
+            GenerateFromHash(debugHash);
+        }
     }
 }

@@ -652,6 +652,15 @@ namespace MapBuilderEditor
             EditorGUILayout.Space();
             if (GUILayout.Button("Generate Debug Map"))
                 ((MapGenerationController)target).GenerateDebugMap();
+
+            if (GUILayout.Button("Generate Random Hash & Map"))
+            {
+                MapGenerationController controller = (MapGenerationController)target;
+                Undo.RecordObject(controller, "Generate Random Map");
+                controller.GenerateRandomMap();
+                EditorUtility.SetDirty(controller);
+                serializedObject.Update();
+            }
         }
     }
 }
