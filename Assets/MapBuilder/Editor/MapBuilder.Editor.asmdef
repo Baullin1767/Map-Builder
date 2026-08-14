@@ -2,7 +2,9 @@
   "name": "MapBuilder.Editor",
   "rootNamespace": "MapBuilderEditor",
   "references": [
-    "MapBuilder.Runtime"
+    "MapBuilder.Runtime",
+    "UnityEngine.UI",
+    "Unity.InputSystem"
   ],
   "includePlatforms": [
     "Editor"

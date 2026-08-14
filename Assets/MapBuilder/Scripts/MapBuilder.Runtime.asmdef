@@ -1,5 +1,9 @@
 {
   "name": "MapBuilder.Runtime",
   "rootNamespace": "MapBuilder",
+  "references": [
+    "UnityEngine.UI",
+    "Unity.InputSystem"
+  ],
   "autoReferenced": true
 }

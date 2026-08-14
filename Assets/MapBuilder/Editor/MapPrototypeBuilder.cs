@@ -614,6 +614,7 @@ namespace MapBuilderEditor
             mapRenderer.Configure(ground, water, roads, catalog);
             MapGenerationController controller = system.AddComponent<MapGenerationController>();
             controller.Configure(mapRenderer, MapGenerationSettings.Prototype64(), "prototype-seed-001", true);
+            MapGenerationCanvasBuilder.Rebuild(controller);
             controller.GenerateFromHash("prototype-seed-001");
 
             Camera camera = Camera.main;

@@ -12,6 +12,7 @@ namespace MapBuilder
 
         public MapLayout LastLayout { get; private set; }
         public string LastHash { get; private set; }
+        public string CurrentHash { get { return debugHash; } }
         public MapGenerationSettings Settings { get { return settings; } }
 
         private void Start()
@@ -60,7 +61,19 @@ namespace MapBuilder
             if (!tilemapRenderer.Render(layout)) return false;
             LastLayout = layout;
             LastHash = hash;
+            debugHash = hash;
             return true;
+        }
+
+        public void SetMapWidth(int width)
+        {
+            settings.width = Mathf.Max(16, width);
+        }
+
+        public void SetMapSize(int width, int height)
+        {
+            settings.width = Mathf.Max(16, width);
+            settings.height = Mathf.Max(16, height);
         }
 
         [ContextMenu("Generate Debug Map")]
