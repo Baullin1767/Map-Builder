@@ -12,28 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7991b69d475d35438a8f8f69da2d94f, type: 3}
   m_Name: MapTileCatalog
   m_EditorClassIdentifier: Assembly-CSharp::MapBuilder.MapTileCatalog
-  grassSprites:
-  - {fileID: 2085738256, guid: 9234c728d7ed6aa4784605070ec2ebef, type: 3}
-  roadVariants:
-  - mask: 0
-    rotationQuarterTurns: 0
-    sprites:
-    - {fileID: 1511060780, guid: 9234c728d7ed6aa4784605070ec2ebef, type: 3}
-  baseWaterSprite: {fileID: -6487848460486613316, guid: 198a3a8811d792d49903a10a91b01771, type: 3}
-  shoreVariants:
-  - mask: 1
-    rotationQuarterTurns: 0
-    sprites:
-    - {fileID: -5354236005934057329, guid: 310b3402a7091f548a8fc82f433a90d6, type: 3}
-  - mask: 55
-    rotationQuarterTurns: 0
-    sprites:
-    - {fileID: -2096607874322865331, guid: 310b3402a7091f548a8fc82f433a90d6, type: 3}
-  - mask: 38
-    rotationQuarterTurns: 0
-    sprites:
-    - {fileID: -5317610901469767448, guid: 310b3402a7091f548a8fc82f433a90d6, type: 3}
-  - mask: 191
-    rotationQuarterTurns: 0
-    sprites:
-    - {fileID: -2668125394098652460, guid: 310b3402a7091f548a8fc82f433a90d6, type: 3}
+  grassSprites: []
+  roadVariants: []
+  baseWaterSprite: {fileID: 0}
+  shoreVariants: []
+  usePrimitiveFallback: 1
+  primitiveResolution: 16
+  groundColor:
+    serializedVersion: 2
+    rgba: 4283079004
+  waterColor:
+    serializedVersion: 2
+    rgba: 4290675766
+  roadColor:
+    serializedVersion: 2
+    rgba: 4282937239

@@ -36,7 +36,18 @@ namespace MapBuilder
             bool[] island = GenerateIsland(layout);
             GenerateInlandWater(layout, island);
             GenerateRoads(layout, island);
-            RemoveShortRoadFragments(layout, 2);
+            EnsureIslandRoadCoverage(layout, island);
+            RemoveRoadDeadEnds(layout);
+            if (!HasAnyRoad(layout)) TryGenerateFallbackLoop(layout, island);
+            int maximumRoadStraight = Mathf.Clamp(13 - settings.roadPoints, 8, 11);
+            int minimumDetourSpacing = Mathf.Clamp(
+                Mathf.Min(layout.Width, layout.Height) / 8, 6, 10);
+            float roadDetourChance = Mathf.Lerp(
+                0.3f, 0.5f, (settings.roadPoints - 2) / 3f);
+            BreakLongStraightRoads(
+                layout, island, maximumRoadStraight, minimumDetourSpacing,
+                roadDetourChance);
+            RemoveRoadDeadEnds(layout);
             BuildMasks(layout);
             return layout;
         }
@@ -69,7 +80,9 @@ namespace MapBuilder
             float phaseA = rng.NextFloat() * Mathf.PI * 2f;
             float phaseB = rng.NextFloat() * Mathf.PI * 2f;
             float phaseC = rng.NextFloat() * Mathf.PI * 2f;
-            const float exponent = 3f;
+            // A higher superellipse exponent keeps broad, square-like sides
+            // while the harmonics above preserve an organic coastline.
+            const float exponent = 5f;
 
             for (int y = 1; y < layout.Height - 1; y++)
             for (int x = 1; x < layout.Width - 1; x++)
@@ -138,7 +151,7 @@ namespace MapBuilder
                         List<Vector2Int> stream = FindPath(
                             layout, center, mouth, false,
                             layout.WaterSeed ^ (ulong)(0x51EA + lake * 131),
-                            island, false, null);
+                            island, false, null, 1, true);
                         CarveStream(layout, stream, layout.WaterSeed ^ (ulong)(0xA11CE + lake));
                         riverMouths.Add(mouth);
                     }
@@ -193,51 +206,50 @@ namespace MapBuilder
         private void GenerateRoads(MapLayout layout, bool[] island)
         {
             DeterministicRng rng = new DeterministicRng(layout.RoadSeed, 29UL);
-            List<Vector2Int> coast = BuildIslandCoast(layout, island);
+            List<Vector2Int> roadCandidates = BuildRoadCandidates(layout, island);
             int requestedRoutes = Mathf.Clamp(settings.roadGates, 2, 5);
 
             for (int route = 0; route < requestedRoutes; route++)
             {
-                List<Vector2Int> availableCoast = FilterFarFromRoads(layout, coast, 3);
-                if (availableCoast.Count < 2) break;
+                List<Vector2Int> availableCells =
+                    FilterFarFromRoads(layout, roadCandidates, 3);
+                if (availableCells.Count < 2) break;
 
-                Vector2Int start = availableCoast[rng.NextInt(availableCoast.Count)];
+                Vector2Int start = availableCells[rng.NextInt(availableCells.Count)];
                 Vector2Int end;
-                int minimumSpan = Mathf.Max(8, Mathf.Min(layout.Width, layout.Height) / 2);
-                if (!TryPickDistant(availableCoast, start, minimumSpan, ref rng, out end))
+                int minimumSpan = Mathf.Max(8, Mathf.Min(layout.Width, layout.Height) / 3);
+                if (!TryPickDistant(availableCells, start, minimumSpan, ref rng, out end))
                     continue;
 
-                List<Vector2Int> controlPoints = new List<Vector2Int> { start };
-                int controlCount = Mathf.Clamp(settings.roadPoints, 2, 5);
-                for (int point = 1; point < controlCount - 1; point++)
-                {
-                    float t = point / (float)(controlCount - 1);
-                    Vector2 interpolated = Vector2.Lerp(start, end, t);
-                    Vector2Int candidate;
-                    if (TryPickControlPoint(
-                        layout, island, interpolated, route, point, ref rng, out candidate))
-                    {
-                        controlPoints.Add(candidate);
-                    }
-                }
-                controlPoints.Add(end);
-
                 bool[] existingRoads = (bool[])layout.Roads.Clone();
-                List<Vector2Int> completeRoute = new List<Vector2Int>();
-                bool valid = true;
-                for (int segment = 0; segment < controlPoints.Count - 1; segment++)
+                List<Vector2Int> completeRoute = FindPath(
+                    layout, start, end, false,
+                    layout.RoadSeed ^ (ulong)(route * 4099 + settings.roadPoints * 313 + 1),
+                    island, true, existingRoads);
+                bool valid = completeRoute.Count > 0;
+
+                if (valid)
                 {
-                    List<Vector2Int> path = FindPath(
-                        layout, controlPoints[segment], controlPoints[segment + 1], false,
-                        layout.RoadSeed ^ (ulong)(route * 4099 + segment * 313 + 1),
-                        island, true, existingRoads);
-                    if (path.Count == 0)
+                    bool[] closureBlocks = (bool[])existingRoads.Clone();
+                    for (int i = 1; i < completeRoute.Count - 1; i++)
+                    {
+                        Vector2Int p = completeRoute[i];
+                        closureBlocks[layout.Index(p.x, p.y)] = true;
+                    }
+
+                    List<Vector2Int> closure = FindPath(
+                        layout, end, start, false,
+                        layout.RoadSeed ^ (ulong)(0xC105E + route * 8191),
+                        island, false, closureBlocks, 0);
+                    if (closure.Count == 0)
                     {
                         valid = false;
-                        break;
                     }
-                    if (completeRoute.Count > 0) path.RemoveAt(0);
-                    completeRoute.AddRange(path);
+                    else
+                    {
+                        closure.RemoveAt(0);
+                        completeRoute.AddRange(closure);
+                    }
                 }
 
                 if (!valid)
@@ -249,9 +261,7 @@ namespace MapBuilder
                 {
                     Vector2Int p = completeRoute[i];
                     int index = layout.Index(p.x, p.y);
-                    // The planned line may cross a stream or lake, but there is
-                    // deliberately no road tile on water: each bank gets an end.
-                    if (!layout.Water[index]) layout.Roads[index] = true;
+                    layout.Roads[index] = true;
                 }
             }
         }
@@ -287,16 +297,203 @@ namespace MapBuilder
                     island, true, existingRoads);
                 if (path.Count == 0) continue;
 
+                bool[] closureBlocks = (bool[])existingRoads.Clone();
+                for (int i = 1; i < path.Count - 1; i++)
+                {
+                    Vector2Int p = path[i];
+                    closureBlocks[layout.Index(p.x, p.y)] = true;
+                }
+                List<Vector2Int> closure = FindPath(
+                    layout, end, start, false,
+                    layout.RoadSeed ^ (ulong)(0x10CA1 + route * 1999 + attempt),
+                    island, false, closureBlocks, 0);
+                if (closure.Count == 0) continue;
+
                 int placed = 0;
                 for (int i = 0; i < path.Count; i++)
                 {
                     Vector2Int p = path[i];
                     int index = layout.Index(p.x, p.y);
-                    if (layout.Water[index]) continue;
                     layout.Roads[index] = true;
                     placed++;
                 }
+                for (int i = 1; i < closure.Count; i++)
+                {
+                    Vector2Int p = closure[i];
+                    layout.Roads[layout.Index(p.x, p.y)] = true;
+                    placed++;
+                }
                 if (placed >= 2) return true;
+            }
+            return false;
+        }
+
+        private void EnsureIslandRoadCoverage(MapLayout layout, bool[] island)
+        {
+            int coverageRadius = Mathf.Clamp(
+                Mathf.Min(layout.Width, layout.Height) / 7, 8, 12);
+            int maximumExtensions = Mathf.Clamp(settings.roadGates * 2, 4, 8);
+            for (int extension = 0; extension < maximumExtensions; extension++)
+            {
+                int distance;
+                Vector2Int anchor = FindFarthestLandFromRoad(
+                    layout, island, out distance);
+                if (distance <= coverageRadius) break;
+                if (!TryAttachCoverageLoop(
+                    layout, island, anchor,
+                    layout.RoadSeed ^ (ulong)(0xC0A3E + extension * 65537)) &&
+                    !TryPlaceCoverageLoopNear(layout, island, anchor))
+                {
+                    break;
+                }
+            }
+        }
+
+        private static Vector2Int FindFarthestLandFromRoad(
+            MapLayout layout, bool[] island, out int farthestDistance)
+        {
+            int[] distances = new int[layout.CellCount];
+            Queue<int> queue = new Queue<int>();
+            for (int i = 0; i < distances.Length; i++) distances[i] = -1;
+            for (int i = 0; i < layout.CellCount; i++)
+            {
+                if (!layout.Roads[i]) continue;
+                distances[i] = 0;
+                queue.Enqueue(i);
+            }
+
+            while (queue.Count > 0)
+            {
+                int current = queue.Dequeue();
+                int x = current % layout.Width;
+                int y = current / layout.Width;
+                for (int d = 0; d < Cardinal.Length; d++)
+                {
+                    int nx = x + Cardinal[d].x;
+                    int ny = y + Cardinal[d].y;
+                    if (!layout.InBounds(nx, ny)) continue;
+                    int next = layout.Index(nx, ny);
+                    if (!island[next] || distances[next] >= 0) continue;
+                    distances[next] = distances[current] + 1;
+                    queue.Enqueue(next);
+                }
+            }
+
+            Vector2Int result = default(Vector2Int);
+            farthestDistance = -1;
+            for (int i = 0; i < layout.CellCount; i++)
+            {
+                if (!island[i] || layout.Water[i] || distances[i] <= farthestDistance)
+                    continue;
+                farthestDistance = distances[i];
+                result = new Vector2Int(i % layout.Width, i / layout.Width);
+            }
+            return result;
+        }
+
+        private static bool TryAttachCoverageLoop(
+            MapLayout layout, bool[] island, Vector2Int anchor, ulong seed)
+        {
+            List<Vector2Int> roads = new List<Vector2Int>();
+            for (int y = 0; y < layout.Height; y++)
+            for (int x = 0; x < layout.Width; x++)
+                if (layout.IsRoad(x, y)) roads.Add(new Vector2Int(x, y));
+            if (roads.Count < 2) return false;
+
+            Vector2Int firstTarget = roads[0];
+            int firstDistance = int.MaxValue;
+            for (int i = 0; i < roads.Count; i++)
+            {
+                int distance = Manhattan(anchor, roads[i]);
+                if (distance >= firstDistance) continue;
+                firstDistance = distance;
+                firstTarget = roads[i];
+            }
+
+            Vector2Int secondTarget = firstTarget;
+            int secondDistance = int.MaxValue;
+            int targetSeparation = Mathf.Max(6,
+                Mathf.Min(layout.Width, layout.Height) / 10);
+            for (int i = 0; i < roads.Count; i++)
+            {
+                if (Manhattan(firstTarget, roads[i]) < targetSeparation) continue;
+                int distance = Manhattan(anchor, roads[i]);
+                if (distance >= secondDistance) continue;
+                secondDistance = distance;
+                secondTarget = roads[i];
+            }
+            if (secondTarget == firstTarget) return false;
+
+            List<Vector2Int> firstPath = FindPath(
+                layout, anchor, firstTarget, false, seed,
+                island, true, null);
+            if (firstPath.Count == 0) return false;
+
+            bool[] secondPathBlocks = new bool[layout.CellCount];
+            for (int i = 1; i < firstPath.Count - 1; i++)
+            {
+                Vector2Int p = firstPath[i];
+                secondPathBlocks[layout.Index(p.x, p.y)] = true;
+            }
+            List<Vector2Int> secondPath = FindPath(
+                layout, anchor, secondTarget, false,
+                seed ^ 0x9E3779B97F4A7C15UL,
+                island, true, secondPathBlocks, 0);
+            if (secondPath.Count == 0) return false;
+
+            for (int i = 0; i < firstPath.Count; i++)
+            {
+                Vector2Int p = firstPath[i];
+                layout.Roads[layout.Index(p.x, p.y)] = true;
+            }
+            for (int i = 0; i < secondPath.Count; i++)
+            {
+                Vector2Int p = secondPath[i];
+                layout.Roads[layout.Index(p.x, p.y)] = true;
+            }
+            return true;
+        }
+
+        private static bool TryPlaceCoverageLoopNear(
+            MapLayout layout, bool[] island, Vector2Int anchor)
+        {
+            for (int searchRadius = 0; searchRadius <= 6; searchRadius++)
+            for (int oy = -searchRadius; oy <= searchRadius; oy++)
+            for (int ox = -searchRadius; ox <= searchRadius; ox++)
+            for (int size = 5; size >= 3; size--)
+            {
+                int left = anchor.x + ox - size / 2;
+                int bottom = anchor.y + oy - size / 2;
+                bool valid = true;
+                for (int offset = 0; offset <= size && valid; offset++)
+                {
+                    int[] xs = { left + offset, left + offset, left, left + size };
+                    int[] ys = { bottom, bottom + size, bottom + offset, bottom + offset };
+                    for (int side = 0; side < 4; side++)
+                    {
+                        if (!layout.InBounds(xs[side], ys[side]))
+                        {
+                            valid = false;
+                            break;
+                        }
+                        int index = layout.Index(xs[side], ys[side]);
+                        if (!island[index] || layout.Water[index])
+                        {
+                            valid = false;
+                            break;
+                        }
+                    }
+                }
+                if (!valid) continue;
+
+                for (int offset = 0; offset <= size; offset++)
+                {
+                    layout.Roads[layout.Index(left + offset, bottom)] = true;
+                    layout.Roads[layout.Index(left + offset, bottom + size)] = true;
+                    layout.Roads[layout.Index(left, bottom + offset)] = true;
+                    layout.Roads[layout.Index(left + size, bottom + offset)] = true;
+                }
+                return true;
             }
             return false;
         }
@@ -318,6 +515,21 @@ namespace MapBuilder
                         break;
                     }
                 }
+            }
+            return result;
+        }
+
+        private static List<Vector2Int> BuildRoadCandidates(
+            MapLayout layout, bool[] island)
+        {
+            List<Vector2Int> result = new List<Vector2Int>();
+            for (int y = 2; y < layout.Height - 2; y++)
+            for (int x = 2; x < layout.Width - 2; x++)
+            {
+                int index = layout.Index(x, y);
+                if (!island[index] || layout.Water[index] ||
+                    AdjacentToWater(layout, x, y, 1)) continue;
+                result.Add(new Vector2Int(x, y));
             }
             return result;
         }
@@ -407,7 +619,8 @@ namespace MapBuilder
         private static List<Vector2Int> FindPath(
             MapLayout layout, Vector2Int start, Vector2Int goal,
             bool blockWater, ulong seed, bool[] allowedCells,
-            bool roadCosts, bool[] forbiddenRoads)
+            bool roadCosts, bool[] forbiddenRoads, int forbiddenRadius = 1,
+            bool riverCosts = false)
         {
             int count = layout.CellCount;
             float[] scores = new float[count];
@@ -458,21 +671,73 @@ namespace MapBuilder
                     if (closed[next] || (allowedCells != null && !allowedCells[next])) continue;
                     if (blockWater && layout.Water[next]) continue;
                     if (forbiddenRoads != null && next != goalIndex && next != startIndex &&
-                        AdjacentToRoad(forbiddenRoads, layout.Width, layout.Height, nx, ny, 1))
+                        AdjacentToRoad(forbiddenRoads, layout.Width, layout.Height,
+                            nx, ny, forbiddenRadius))
                     {
                         continue;
                     }
 
-                    float step = 0.85f + SeedUtility.Cell01(seed, nx, ny) * 0.45f;
-                    if (roadCosts && layout.Water[next]) step += 0.12f;
+                    bool currentIsWater = layout.Water[current];
+                    bool nextIsWater = layout.Water[next];
+                    float step;
+                    if (roadCosts && nextIsWater)
+                    {
+                        step = 8f;
+                    }
+                    else if (riverCosts)
+                    {
+                        // A stronger terrain bias makes the stream drift around
+                        // local low-cost cells instead of tracing a near-straight
+                        // Manhattan route from the lake to the coast.
+                        step = 0.72f + SeedUtility.Cell01(seed, nx, ny) * 0.82f;
+                    }
+                    else
+                    {
+                        step = 0.85f + SeedUtility.Cell01(seed, nx, ny) * 0.45f;
+                    }
 
                     int oldPrevious = previous[current];
                     if (oldPrevious >= 0)
                     {
                         int px = oldPrevious % layout.Width;
                         int py = oldPrevious / layout.Width;
-                        if (cx - px != Cardinal[d].x || cy - py != Cardinal[d].y)
-                            step += roadCosts ? 0.72f : 0.42f;
+                        bool continuesStraight =
+                            cx - px == Cardinal[d].x && cy - py == Cardinal[d].y;
+                        if (riverCosts)
+                        {
+                            if (continuesStraight)
+                            {
+                                int straightRun = CountStraightRun(
+                                    previous, current, Cardinal[d], layout.Width, 7);
+                                if (straightRun >= 3)
+                                    step += (straightRun - 2) * 0.48f;
+                            }
+                            else
+                            {
+                                // Avoid one-cell zigzags while still allowing broad,
+                                // frequent bends once a straight run has developed.
+                                step += 0.14f;
+                            }
+                        }
+                        else if (roadCosts && currentIsWater)
+                        {
+                            // Once a road enters water, prefer the shortest bridge:
+                            // every extra water tile is expensive and turns inside
+                            // the river are much more expensive than going straight.
+                            if (!continuesStraight) step += 1.25f;
+                        }
+                        else if (roadCosts && continuesStraight)
+                        {
+                            int straightRun = CountStraightRun(
+                                previous, current, Cardinal[d], layout.Width, 10);
+                            if (straightRun >= 10) continue;
+                            if (straightRun >= 5)
+                                step += (straightRun - 4) * 0.22f;
+                        }
+                        else if (!roadCosts && !continuesStraight)
+                        {
+                            step += 0.42f;
+                        }
                     }
 
                     float candidate = scores[current] + step;
@@ -499,13 +764,45 @@ namespace MapBuilder
             return result;
         }
 
+        private static int CountStraightRun(
+            int[] previous, int current, Vector2Int direction, int width, int limit)
+        {
+            int run = 0;
+            int cursor = current;
+            while (run < limit && previous[cursor] >= 0)
+            {
+                int prior = previous[cursor];
+                int cx = cursor % width;
+                int cy = cursor / width;
+                int px = prior % width;
+                int py = prior / width;
+                if (cx - px != direction.x || cy - py != direction.y) break;
+                run++;
+                cursor = prior;
+            }
+            return run;
+        }
+
         private static void CarveStream(MapLayout layout, List<Vector2Int> path, ulong seed)
         {
             for (int i = 0; i < path.Count; i++)
             {
                 Vector2Int p = path[i];
                 SetWater(layout, p.x, p.y);
-                if (i > 0 && i < path.Count - 1 &&
+                if (i <= 0 || i >= path.Count - 1) continue;
+
+                Vector2Int incoming = p - path[i - 1];
+                Vector2Int outgoing = path[i + 1] - p;
+                bool isTurn = incoming != outgoing;
+                if (isTurn)
+                {
+                    // Complete the 2x2 footprint around a grid turn. The shore
+                    // renderer then selects a rounded diagonal transition instead
+                    // of exposing a strict 90-degree river elbow.
+                    Vector2Int roundedCorner = path[i - 1] + path[i + 1] - p;
+                    SetWater(layout, roundedCorner.x, roundedCorner.y);
+                }
+                else if (
                     SeedUtility.Cell01(seed, p.x, p.y) < 0.18f)
                 {
                     Vector2Int direction = path[i + 1] - path[i - 1];
@@ -737,37 +1034,245 @@ namespace MapBuilder
             return false;
         }
 
-        private static void RemoveShortRoadFragments(MapLayout layout, int minimumSize)
+        private static void RemoveRoadDeadEnds(MapLayout layout)
         {
-            bool[] visited = new bool[layout.CellCount];
-            Queue<Vector2Int> queue = new Queue<Vector2Int>();
-            List<int> component = new List<int>();
-            for (int y = 0; y < layout.Height; y++)
-            for (int x = 0; x < layout.Width; x++)
+            Queue<int> queue = new Queue<int>();
+            bool[] queued = new bool[layout.CellCount];
+            for (int index = 0; index < layout.CellCount; index++)
             {
-                int start = layout.Index(x, y);
-                if (!layout.Roads[start] || visited[start]) continue;
-                component.Clear();
-                visited[start] = true;
-                queue.Enqueue(new Vector2Int(x, y));
-                while (queue.Count > 0)
+                if (!layout.Roads[index]) continue;
+                int x = index % layout.Width;
+                int y = index / layout.Width;
+                if (CountRoadNeighbours(layout, x, y) >= 2) continue;
+                queued[index] = true;
+                queue.Enqueue(index);
+            }
+
+            while (queue.Count > 0)
+            {
+                int index = queue.Dequeue();
+                queued[index] = false;
+                if (!layout.Roads[index]) continue;
+                int x = index % layout.Width;
+                int y = index / layout.Width;
+                if (CountRoadNeighbours(layout, x, y) >= 2) continue;
+                layout.Roads[index] = false;
+                for (int d = 0; d < Cardinal.Length; d++)
                 {
-                    Vector2Int p = queue.Dequeue();
-                    int index = layout.Index(p.x, p.y);
-                    component.Add(index);
-                    for (int d = 0; d < Cardinal.Length; d++)
+                    int nx = x + Cardinal[d].x;
+                    int ny = y + Cardinal[d].y;
+                    if (!layout.InBounds(nx, ny)) continue;
+                    int neighbour = layout.Index(nx, ny);
+                    if (!layout.Roads[neighbour] || queued[neighbour]) continue;
+                    queued[neighbour] = true;
+                    queue.Enqueue(neighbour);
+                }
+            }
+        }
+
+        private static int CountRoadNeighbours(MapLayout layout, int x, int y)
+        {
+            int count = 0;
+            for (int d = 0; d < Cardinal.Length; d++)
+                if (layout.IsRoad(x + Cardinal[d].x, y + Cardinal[d].y)) count++;
+            return count;
+        }
+
+        private static bool HasAnyRoad(MapLayout layout)
+        {
+            for (int i = 0; i < layout.Roads.Length; i++)
+                if (layout.Roads[i]) return true;
+            return false;
+        }
+
+        private static bool TryGenerateFallbackLoop(MapLayout layout, bool[] island)
+        {
+            int loopsPlaced = 0;
+            int maximumSize = Mathf.Min(12, Mathf.Min(layout.Width, layout.Height) / 3);
+            for (int loop = 0; loop < 2; loop++)
+            {
+                bool placed = false;
+                for (int size = maximumSize; size >= 3 && !placed; size--)
+                for (int y = 1; y + size < layout.Height - 1 && !placed; y++)
+                for (int x = 1; x + size < layout.Width - 1 && !placed; x++)
+                {
+                    bool valid = true;
+                    for (int oy = 0; oy <= size && valid; oy++)
+                    for (int ox = 0; ox <= size; ox++)
                     {
-                        Vector2Int n = p + Cardinal[d];
-                        if (!layout.InBounds(n.x, n.y)) continue;
-                        int next = layout.Index(n.x, n.y);
-                        if (!layout.Roads[next] || visited[next]) continue;
-                        visited[next] = true;
-                        queue.Enqueue(n);
+                        if (ox != 0 && ox != size && oy != 0 && oy != size) continue;
+                        int px = x + ox;
+                        int py = y + oy;
+                        int index = layout.Index(px, py);
+                        if (!island[index] || layout.Water[index] ||
+                            AdjacentToRoad(layout.Roads, layout.Width, layout.Height,
+                                px, py, 2))
+                        {
+                            valid = false;
+                            break;
+                        }
+                    }
+                    if (!valid) continue;
+                    for (int offset = 0; offset <= size; offset++)
+                    {
+                        layout.Roads[layout.Index(x + offset, y)] = true;
+                        layout.Roads[layout.Index(x + offset, y + size)] = true;
+                        layout.Roads[layout.Index(x, y + offset)] = true;
+                        layout.Roads[layout.Index(x + size, y + offset)] = true;
+                    }
+                    placed = true;
+                    loopsPlaced++;
+                }
+                if (!placed) break;
+            }
+            return loopsPlaced > 0;
+        }
+
+        private static void BreakLongStraightRoads(
+            MapLayout layout, bool[] island, int maximumStraight,
+            int minimumDetourSpacing, float detourChance)
+        {
+            int safety = layout.CellCount;
+            while (safety-- > 0)
+            {
+                bool changed = false;
+                for (int y = 1; y < layout.Height - 1 && !changed; y++)
+                for (int x = 1; x < layout.Width - maximumStraight && !changed; x++)
+                {
+                    bool longRun = true;
+                    for (int offset = 0; offset <= maximumStraight; offset++)
+                    {
+                        int px = x + offset;
+                        if (!layout.IsRoad(px, y) ||
+                            layout.Water[layout.Index(px, y)] ||
+                            layout.IsRoad(px, y - 1) ||
+                            layout.IsRoad(px, y + 1))
+                        {
+                            longRun = false;
+                            break;
+                        }
+                    }
+                    int detourX = x + maximumStraight / 2;
+                    if (longRun && !HasOneTileRoadLoopNear(
+                            layout, detourX, y, minimumDetourSpacing) &&
+                        SeedUtility.Cell01(
+                        layout.RoadSeed ^ 0x48F2A91UL, detourX, y) < detourChance)
+                        changed = TryDetourRoadCell(
+                            layout, island, detourX, y, true);
+                }
+
+                for (int x = 1; x < layout.Width - 1 && !changed; x++)
+                for (int y = 1; y < layout.Height - maximumStraight && !changed; y++)
+                {
+                    bool longRun = true;
+                    for (int offset = 0; offset <= maximumStraight; offset++)
+                    {
+                        int py = y + offset;
+                        if (!layout.IsRoad(x, py) ||
+                            layout.Water[layout.Index(x, py)] ||
+                            layout.IsRoad(x - 1, py) ||
+                            layout.IsRoad(x + 1, py))
+                        {
+                            longRun = false;
+                            break;
+                        }
+                    }
+                    int detourY = y + maximumStraight / 2;
+                    if (longRun && !HasOneTileRoadLoopNear(
+                            layout, x, detourY, minimumDetourSpacing) &&
+                        SeedUtility.Cell01(
+                        layout.RoadSeed ^ 0xB73C6D5UL, x, detourY) < detourChance)
+                        changed = TryDetourRoadCell(
+                            layout, island, x, detourY, false);
+                }
+
+                if (!changed) break;
+            }
+        }
+
+        private static bool HasOneTileRoadLoopNear(
+            MapLayout layout, int centerX, int centerY, int radius)
+        {
+            int minX = Mathf.Max(1, centerX - radius);
+            int maxX = Mathf.Min(layout.Width - 2, centerX + radius);
+            int minY = Mathf.Max(1, centerY - radius);
+            int maxY = Mathf.Min(layout.Height - 2, centerY + radius);
+            for (int y = minY; y <= maxY; y++)
+            for (int x = minX; x <= maxX; x++)
+            {
+                if (Mathf.Abs(x - centerX) + Mathf.Abs(y - centerY) > radius ||
+                    layout.IsRoad(x, y) || layout.IsWater(x, y))
+                {
+                    continue;
+                }
+                if (layout.IsRoad(x, y + 1) && layout.IsRoad(x + 1, y) &&
+                    layout.IsRoad(x, y - 1) && layout.IsRoad(x - 1, y))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private static bool TryDetourRoadCell(
+            MapLayout layout, bool[] island, int x, int y, bool horizontal)
+        {
+            for (int side = -1; side <= 1; side += 2)
+            {
+                bool valid = true;
+                for (int offset = -1; offset <= 1; offset++)
+                {
+                    int nx = horizontal ? x + offset : x + side;
+                    int ny = horizontal ? y + side : y + offset;
+                    if (!layout.InBounds(nx, ny)) { valid = false; break; }
+                    int index = layout.Index(nx, ny);
+                    if (!island[index] || layout.Water[index] || layout.Roads[index])
+                    {
+                        valid = false;
+                        break;
                     }
                 }
-                if (component.Count >= minimumSize) continue;
-                for (int i = 0; i < component.Count; i++) layout.Roads[component[i]] = false;
+                if (!valid) continue;
+
+                layout.Roads[layout.Index(x, y)] = false;
+                for (int offset = -1; offset <= 1; offset++)
+                {
+                    int nx = horizontal ? x + offset : x + side;
+                    int ny = horizontal ? y + side : y + offset;
+                    layout.Roads[layout.Index(nx, ny)] = true;
+                }
+                return true;
             }
+            return TryAddLoopBranch(layout, island, x, y, horizontal);
+        }
+
+        private static bool TryAddLoopBranch(
+            MapLayout layout, bool[] island, int x, int y, bool horizontal)
+        {
+            for (int side = -1; side <= 1; side += 2)
+            for (int forward = -1; forward <= 1; forward += 2)
+            {
+                int firstX = horizontal ? x : x + side;
+                int firstY = horizontal ? y + side : y;
+                int secondX = horizontal ? x + forward : x + side;
+                int secondY = horizontal ? y + side : y + forward;
+                int anchorX = horizontal ? x + forward : x;
+                int anchorY = horizontal ? y : y + forward;
+                if (!layout.InBounds(firstX, firstY) ||
+                    !layout.InBounds(secondX, secondY) ||
+                    !layout.IsRoad(anchorX, anchorY)) continue;
+
+                int first = layout.Index(firstX, firstY);
+                int second = layout.Index(secondX, secondY);
+                if (!island[first] || !island[second] ||
+                    layout.Water[first] || layout.Water[second] ||
+                    layout.Roads[first] || layout.Roads[second]) continue;
+
+                layout.Roads[first] = true;
+                layout.Roads[second] = true;
+                return true;
+            }
+            return false;
         }
 
         private static void BuildMasks(MapLayout layout)

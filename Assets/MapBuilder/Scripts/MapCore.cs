@@ -19,9 +19,9 @@ namespace MapBuilder
         [Range(2, 4)] public int minLakes = 2;
         [Tooltip("Maximum number of lakes placed inside the island.")]
         [Range(2, 4)] public int maxLakes = 4;
-        [Tooltip("Number of separate road routes generated across the island.")]
+        [Tooltip("Number of closed road loops generated across the island.")]
         [Range(2, 5)] public int roadGates = 3;
-        [Tooltip("Number of control points used to shape each road route.")]
+        [Tooltip("Road winding: higher values add irregular one-tile detours more often.")]
         [Range(2, 5)] public int roadPoints = 3;
 
         public MapGenerationSettings CopyValidated()
@@ -42,7 +42,7 @@ namespace MapBuilder
 
     public sealed class MapLayout
     {
-        public const int GeneratorVersion = 4;
+        public const int GeneratorVersion = 9;
         public int Width { get; private set; }
         public int Height { get; private set; }
         public string Hash { get; private set; }

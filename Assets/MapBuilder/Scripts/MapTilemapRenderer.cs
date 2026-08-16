@@ -6,6 +6,8 @@ namespace MapBuilder
 {
     public sealed class MapTilemapRenderer : MonoBehaviour
     {
+        public const int OceanExtensionTiles = 16;
+
         [SerializeField] private Tilemap groundTilemap;
         [SerializeField] private Tilemap waterTilemap;
         [SerializeField] private Tilemap shoreTilemap;
@@ -85,7 +87,7 @@ namespace MapBuilder
 
             BoundsInt bounds = new BoundsInt(0, 0, 0, layout.Width, layout.Height, 1);
             groundTilemap.SetTilesBlock(bounds, groundTiles);
-            waterTilemap.SetTilesBlock(bounds, waterTiles);
+            SetExtendedOcean(layout, waterTiles);
             shoreTilemap.SetTilesBlock(bounds, shoreTiles);
             roadTilemap.SetTilesBlock(bounds, roadTiles);
             groundTilemap.CompressBounds();
@@ -93,6 +95,30 @@ namespace MapBuilder
             shoreTilemap.CompressBounds();
             roadTilemap.CompressBounds();
             return true;
+        }
+
+        private void SetExtendedOcean(MapLayout layout, TileBase[] mapWaterTiles)
+        {
+            int width = layout.Width + OceanExtensionTiles * 2;
+            int height = layout.Height + OceanExtensionTiles * 2;
+            TileBase oceanTile = TileFor(catalog.BaseWaterSprite);
+            TileBase[] extendedWaterTiles = new TileBase[width * height];
+            for (int i = 0; i < extendedWaterTiles.Length; i++)
+                extendedWaterTiles[i] = oceanTile;
+
+            for (int y = 0; y < layout.Height; y++)
+            for (int x = 0; x < layout.Width; x++)
+            {
+                int source = layout.Index(x, y);
+                int target = (y + OceanExtensionTiles) * width +
+                    x + OceanExtensionTiles;
+                extendedWaterTiles[target] = mapWaterTiles[source];
+            }
+
+            BoundsInt oceanBounds = new BoundsInt(
+                -OceanExtensionTiles, -OceanExtensionTiles, 0,
+                width, height, 1);
+            waterTilemap.SetTilesBlock(oceanBounds, extendedWaterTiles);
         }
 
         private static bool HasWaterNeighbor(MapLayout layout, int x, int y)

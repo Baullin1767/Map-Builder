@@ -14,7 +14,7 @@ namespace MapBuilder
         [SerializeField] private MapTilemapRenderer tilemapRenderer;
 
         [Header("Zoom")]
-        [SerializeField, Min(0.01f)] private float zoomSensitivity = 0.0025f;
+        [SerializeField, Min(0.0001f)] private float zoomSensitivity = 0.00625f;
         [SerializeField, Range(0f, 0.5f)] private float fitPadding = 0.05f;
         [SerializeField, Range(0.01f, 1f)] private float minimumZoomFactor = 0.08f;
         [SerializeField, Min(1f)] private float maximumZoomFactor = 2f;
