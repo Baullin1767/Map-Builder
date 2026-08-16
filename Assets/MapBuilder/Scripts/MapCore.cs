@@ -42,7 +42,7 @@ namespace MapBuilder
 
     public sealed class MapLayout
     {
-        public const int GeneratorVersion = 9;
+        public const int GeneratorVersion = 10;
         public int Width { get; private set; }
         public int Height { get; private set; }
         public string Hash { get; private set; }

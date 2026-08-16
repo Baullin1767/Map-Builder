@@ -19,6 +19,7 @@ namespace MapBuilder
         {
             Vector2Int.up, Vector2Int.right, Vector2Int.down, Vector2Int.left
         };
+        private const int MinimumRoadStraightBeforeTurn = 3;
 
         public MapLayoutGenerator(MapGenerationSettings settings)
         {
@@ -225,7 +226,7 @@ namespace MapBuilder
                 List<Vector2Int> completeRoute = FindPath(
                     layout, start, end, false,
                     layout.RoadSeed ^ (ulong)(route * 4099 + settings.roadPoints * 313 + 1),
-                    island, true, existingRoads);
+                    island, true, existingRoads, 1, false, true);
                 bool valid = completeRoute.Count > 0;
 
                 if (valid)
@@ -240,7 +241,7 @@ namespace MapBuilder
                     List<Vector2Int> closure = FindPath(
                         layout, end, start, false,
                         layout.RoadSeed ^ (ulong)(0xC105E + route * 8191),
-                        island, false, closureBlocks, 0);
+                        island, false, closureBlocks, 0, false, true);
                     if (closure.Count == 0)
                     {
                         valid = false;
@@ -294,7 +295,7 @@ namespace MapBuilder
                 List<Vector2Int> path = FindPath(
                     layout, start, end, false,
                     layout.RoadSeed ^ (ulong)(0xFA11 + route * 997 + attempt),
-                    island, true, existingRoads);
+                    island, true, existingRoads, 1, false, true);
                 if (path.Count == 0) continue;
 
                 bool[] closureBlocks = (bool[])existingRoads.Clone();
@@ -306,7 +307,7 @@ namespace MapBuilder
                 List<Vector2Int> closure = FindPath(
                     layout, end, start, false,
                     layout.RoadSeed ^ (ulong)(0x10CA1 + route * 1999 + attempt),
-                    island, false, closureBlocks, 0);
+                    island, false, closureBlocks, 0, false, true);
                 if (closure.Count == 0) continue;
 
                 int placed = 0;
@@ -426,7 +427,7 @@ namespace MapBuilder
 
             List<Vector2Int> firstPath = FindPath(
                 layout, anchor, firstTarget, false, seed,
-                island, true, null);
+                island, true, null, 1, false, true);
             if (firstPath.Count == 0) return false;
 
             bool[] secondPathBlocks = new bool[layout.CellCount];
@@ -438,7 +439,7 @@ namespace MapBuilder
             List<Vector2Int> secondPath = FindPath(
                 layout, anchor, secondTarget, false,
                 seed ^ 0x9E3779B97F4A7C15UL,
-                island, true, secondPathBlocks, 0);
+                island, true, secondPathBlocks, 0, false, true);
             if (secondPath.Count == 0) return false;
 
             for (int i = 0; i < firstPath.Count; i++)
@@ -620,7 +621,7 @@ namespace MapBuilder
             MapLayout layout, Vector2Int start, Vector2Int goal,
             bool blockWater, ulong seed, bool[] allowedCells,
             bool roadCosts, bool[] forbiddenRoads, int forbiddenRadius = 1,
-            bool riverCosts = false)
+            bool riverCosts = false, bool enforceRoadTurns = false)
         {
             int count = layout.CellCount;
             float[] scores = new float[count];
@@ -719,20 +720,34 @@ namespace MapBuilder
                                 step += 0.14f;
                             }
                         }
-                        else if (roadCosts && currentIsWater)
+                        else if (enforceRoadTurns && currentIsWater)
                         {
                             // Once a road enters water, prefer the shortest bridge:
                             // every extra water tile is expensive and turns inside
                             // the river are much more expensive than going straight.
                             if (!continuesStraight) step += 1.25f;
                         }
-                        else if (roadCosts && continuesStraight)
+                        else if (enforceRoadTurns && continuesStraight)
                         {
                             int straightRun = CountStraightRun(
                                 previous, current, Cardinal[d], layout.Width, 10);
                             if (straightRun >= 10) continue;
                             if (straightRun >= 5)
                                 step += (straightRun - 4) * 0.22f;
+                        }
+                        else if (enforceRoadTurns)
+                        {
+                            Vector2Int previousDirection =
+                                new Vector2Int(cx - px, cy - py);
+                            int straightRun = CountStraightRun(
+                                previous, current, previousDirection,
+                                layout.Width, MinimumRoadStraightBeforeTurn);
+                            if (straightRun < MinimumRoadStraightBeforeTurn &&
+                                next != goalIndex)
+                            {
+                                continue;
+                            }
+                            step += 0.35f;
                         }
                         else if (!roadCosts && !continuesStraight)
                         {
