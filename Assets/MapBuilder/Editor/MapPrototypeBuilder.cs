@@ -12,20 +12,35 @@ namespace MapBuilderEditor
     public static class MapPrototypeBuilder
     {
         private const string Root = "Assets/IMG/текстуры почвы";
+        private const string TiledRoot = "Assets/Img/Tiled_files";
+        private const string ExteriorPath = TiledRoot + "/Tiles_exterior.png";
+        private const string CoastPath = TiledRoot + "/Water_coasts.png";
+        private const string WaterDetailPath = TiledRoot + "/water_detilazation_v2.png";
         private const string CatalogPath = "Assets/MapBuilder/MapTileCatalog.asset";
         private const int SheetSize = 1254;
         private const int CellSize = 156;
         private const int WaterTileSize = 68;
         private const int WaterPixelsPerUnit = 85;
         private const int Offset = 3;
+        private const int TiledPixelsPerUnit = 16;
+        private const int GrassSpriteIndex = 227;
+        private const int EarthSpriteIndex = 231;
+        private const int BaseWaterSpriteIndex = 0;
+        private const int ShoreEndSpriteIndex = 67;
+        private const int ShoreStraightSpriteIndex = 86;
+        private const int ShoreInnerCornerSpriteIndex = 90;
+        private const int ShoreOuterCornerSpriteIndex = 92;
 
         [MenuItem("Tools/Map Builder/Build Prototype")]
         public static void BuildPrototype()
         {
-            Sprite[] grass = LoadExistingSheet(Root + "/grass_tileset.png", 64, CellSize);
-            Sprite[] roads = LoadExistingSheet(Root + "/roads_tileset.png", 64, CellSize);
-            Sprite[] water = LoadExistingSheet(
-                Root + "/water_tileset.png", 256, WaterPixelsPerUnit);
+            Sprite[] exterior = LoadTiledSheet(ExteriorPath);
+            Sprite[] coasts = LoadTiledSheet(CoastPath);
+            Sprite[] waterDetails = LoadTiledSheet(WaterDetailPath);
+            Sprite grass = FindSprite(exterior, "Tiles_exterior", GrassSpriteIndex);
+            Sprite earth = FindSprite(exterior, "Tiles_exterior", EarthSpriteIndex);
+            Sprite baseWater = FindSprite(
+                waterDetails, "water_detilazation_v2", BaseWaterSpriteIndex);
 
             MapTileCatalog catalog = AssetDatabase.LoadAssetAtPath<MapTileCatalog>(CatalogPath);
             if (catalog == null)
@@ -34,47 +49,37 @@ namespace MapBuilderEditor
                 AssetDatabase.CreateAsset(catalog, CatalogPath);
             }
 
-            List<SpriteMaskVariants> roadGroups = BuildRoadGroups(roads);
-            List<SpriteMaskVariants> waterGroups = BuildWaterGroups(water);
-            catalog.Configure(grass.ToList(), roadGroups, waterGroups);
+            catalog.Configure(
+                new List<Sprite> { grass },
+                BuildEarthRoadGroups(earth),
+                baseWater,
+                BuildShoreGroups(coasts));
             EditorUtility.SetDirty(catalog);
             AssetDatabase.SaveAssets();
 
             BuildScene(catalog);
-            Debug.Log("Map Builder prototype created: 64x64, 3 Tilemaps, deterministic hash contract.");
+            Debug.Log("Map Builder prototype created from the 16x16 Tiled Files tilesets.");
         }
 
-        [MenuItem("Tools/Map Builder/Rebuild Water Catalog")]
-        public static void RebuildWaterCatalog()
+        [MenuItem("Tools/Map Builder/Rebuild Tiled Catalog")]
+        public static void RebuildTiledCatalog()
         {
-            Sprite[] water = LoadExistingSheet(
-                Root + "/water_tileset.png", 256, WaterPixelsPerUnit);
-            if (water.Any(sprite =>
-                Mathf.RoundToInt(sprite.rect.width) != WaterTileSize ||
-                Mathf.RoundToInt(sprite.rect.height) != WaterTileSize))
-            {
-                throw new InvalidOperationException(
-                    "Water tileset must contain only 68x68 sprites.");
-            }
             MapTileCatalog catalog = AssetDatabase.LoadAssetAtPath<MapTileCatalog>(CatalogPath);
             if (catalog == null)
                 throw new InvalidOperationException("Tile catalog not found: " + CatalogPath);
 
-            catalog.ConfigureWater(BuildWaterGroups(water));
-            EditorUtility.SetDirty(catalog);
-            AssetDatabase.SaveAssets();
-            Debug.Log("Water catalog rebuilt from 256 sprites sliced at 68x68.");
-        }
-
-        [MenuItem("Tools/Map Builder/Rebuild Road Catalog")]
-        public static void RebuildRoadCatalog()
-        {
-            Sprite[] roads = LoadExistingSheet(Root + "/roads_tileset.png", 64, CellSize);
-            MapTileCatalog catalog = AssetDatabase.LoadAssetAtPath<MapTileCatalog>(CatalogPath);
-            if (catalog == null)
-                throw new InvalidOperationException("Tile catalog not found: " + CatalogPath);
-
-            catalog.ConfigureRoads(BuildRoadGroups(roads));
+            Sprite[] exterior = LoadTiledSheet(ExteriorPath);
+            Sprite[] coasts = LoadTiledSheet(CoastPath);
+            Sprite[] waterDetails = LoadTiledSheet(WaterDetailPath);
+            Sprite grass = FindSprite(exterior, "Tiles_exterior", GrassSpriteIndex);
+            Sprite earth = FindSprite(exterior, "Tiles_exterior", EarthSpriteIndex);
+            Sprite baseWater = FindSprite(
+                waterDetails, "water_detilazation_v2", BaseWaterSpriteIndex);
+            catalog.Configure(
+                new List<Sprite> { grass },
+                BuildEarthRoadGroups(earth),
+                baseWater,
+                BuildShoreGroups(coasts));
             EditorUtility.SetDirty(catalog);
             AssetDatabase.SaveAssets();
 
@@ -87,7 +92,87 @@ namespace MapBuilderEditor
                 EditorSceneManager.SaveOpenScenes();
             }
 
-            Debug.Log("Road catalog rebuilt from 64 sprites using sprite-local edge sampling.");
+            Debug.Log("Map catalog rebuilt from Tiles Exterior, Water Coast and Water Detalization.");
+        }
+
+        private static Sprite[] LoadTiledSheet(string path)
+        {
+            TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
+            if (importer == null)
+                throw new InvalidOperationException("Texture not found: " + path);
+
+            importer.textureType = TextureImporterType.Sprite;
+            importer.spriteImportMode = SpriteImportMode.Multiple;
+            importer.spritePixelsPerUnit = TiledPixelsPerUnit;
+            importer.filterMode = FilterMode.Point;
+            importer.textureCompression = TextureImporterCompression.Uncompressed;
+            importer.mipmapEnabled = false;
+            importer.alphaIsTransparency = true;
+            importer.isReadable = true;
+            importer.SaveAndReimport();
+
+            return AssetDatabase.LoadAllAssetsAtPath(path)
+                .OfType<Sprite>()
+                .OrderBy(ParseSpriteIndex)
+                .ToArray();
+        }
+
+        private static Sprite FindSprite(Sprite[] sprites, string prefix, int index)
+        {
+            string expected = prefix + "_" + index;
+            Sprite sprite = sprites.FirstOrDefault(value => value.name == expected);
+            if (sprite == null)
+                throw new InvalidOperationException("Sprite not found: " + expected);
+            return sprite;
+        }
+
+        private static List<SpriteMaskVariants> BuildEarthRoadGroups(Sprite earth)
+        {
+            return new List<SpriteMaskVariants>
+            {
+                new SpriteMaskVariants
+                {
+                    mask = 0,
+                    rotationQuarterTurns = 0,
+                    sprites = new List<Sprite> { earth }
+                }
+            };
+        }
+
+        private static List<SpriteMaskVariants> BuildShoreGroups(Sprite[] sprites)
+        {
+            // Water_coasts contains several visually different coast families in
+            // the same mask range (grass, dirt slopes and cliff fragments). A
+            // mask-based scan therefore mixed incompatible pieces around one
+            // lake. Keep one coherent grass family and rotate its four topology
+            // archetypes for every direction.
+            return new List<SpriteMaskVariants>
+            {
+                ShoreVariant(MapTopology.North,
+                    FindSprite(sprites, "Water_coasts", ShoreEndSpriteIndex)),
+                ShoreVariant(
+                    MapTopology.North | MapTopology.East | MapTopology.South |
+                    MapTopology.NorthEast | MapTopology.SouthEast,
+                    FindSprite(sprites, "Water_coasts", ShoreStraightSpriteIndex)),
+                ShoreVariant(
+                    MapTopology.East | MapTopology.South | MapTopology.SouthEast,
+                    FindSprite(sprites, "Water_coasts", ShoreOuterCornerSpriteIndex)),
+                ShoreVariant(
+                    MapTopology.North | MapTopology.East | MapTopology.South |
+                    MapTopology.West | MapTopology.NorthEast |
+                    MapTopology.SouthEast | MapTopology.NorthWest,
+                    FindSprite(sprites, "Water_coasts", ShoreInnerCornerSpriteIndex))
+            };
+        }
+
+        private static SpriteMaskVariants ShoreVariant(int mask, Sprite sprite)
+        {
+            return new SpriteMaskVariants
+            {
+                mask = MapTopology.CanonicalWaterMask(mask),
+                rotationQuarterTurns = 0,
+                sprites = new List<Sprite> { sprite }
+            };
         }
 
         private static Sprite[] LoadExistingSheet(string path, int expectedCount, int pixelsPerUnit)
@@ -295,11 +380,17 @@ namespace MapBuilderEditor
             classified.Remove(0x9B);
             classified.Remove(0xCD);
 
-            SetWaterGroup(classified, sprites, 0x4C,
-                "water_tileset_5_3", "water_tileset_17_1");
-            classified.Remove(0x13);
-            classified.Remove(0x26);
-            classified.Remove(0x89);
+            // Explicit corner quarters supplied by the tileset author. The sprite
+            // families are intentionally inverted between outer and inner masks.
+            SetWaterGroup(classified, sprites, 0x26, "water_tileset_50_0");
+            SetWaterGroup(classified, sprites, 0x4C, "water_tileset_49_1");
+            SetWaterGroup(classified, sprites, 0x13, "water_tileset_50_2");
+            SetWaterGroup(classified, sprites, 0x89, "water_tileset_51_3");
+
+            SetWaterGroup(classified, sprites, 0x7F, "water_tileset_44_0");
+            SetWaterGroup(classified, sprites, 0xEF, "water_tileset_44_1");
+            SetWaterGroup(classified, sprites, 0xBF, "water_tileset_40_2");
+            SetWaterGroup(classified, sprites, 0xDF, "water_tileset_41_3");
 
             HashSet<int> canonical = new HashSet<int>();
             for (int mask = 0; mask < 256; mask++)
@@ -459,6 +550,41 @@ namespace MapBuilderEditor
             return mask;
         }
 
+        private static int ClassifyLand(Sprite sprite)
+        {
+            Texture2D texture = sprite.texture;
+            RectInt r = RectToInt(sprite.rect);
+            int mask = 0;
+            bool n = FeatureRatio(texture, r, Direction.North, IsLandPixel) > 0.5f;
+            bool e = FeatureRatio(texture, r, Direction.East, IsLandPixel) > 0.5f;
+            bool s = FeatureRatio(texture, r, Direction.South, IsLandPixel) > 0.5f;
+            bool w = FeatureRatio(texture, r, Direction.West, IsLandPixel) > 0.5f;
+            if (n) mask |= MapTopology.North;
+            if (e) mask |= MapTopology.East;
+            if (s) mask |= MapTopology.South;
+            if (w) mask |= MapTopology.West;
+            if (n && e && CornerRatio(texture, r, 1, 1, IsLandPixel) > 0.5f)
+                mask |= MapTopology.NorthEast;
+            if (s && e && CornerRatio(texture, r, 1, -1, IsLandPixel) > 0.5f)
+                mask |= MapTopology.SouthEast;
+            if (s && w && CornerRatio(texture, r, -1, -1, IsLandPixel) > 0.5f)
+                mask |= MapTopology.SouthWest;
+            if (n && w && CornerRatio(texture, r, -1, 1, IsLandPixel) > 0.5f)
+                mask |= MapTopology.NorthWest;
+            return MapTopology.CanonicalWaterMask(mask);
+        }
+
+        private static float LandCoverage(Sprite sprite)
+        {
+            Texture2D texture = sprite.texture;
+            RectInt rect = RectToInt(sprite.rect);
+            int landPixels = 0;
+            for (int y = 0; y < rect.height; y++)
+            for (int x = 0; x < rect.width; x++)
+                if (IsLandPixel(texture.GetPixel(rect.x + x, rect.y + y))) landPixels++;
+            return landPixels / (float)(rect.width * rect.height);
+        }
+
         private enum Direction { North, East, South, West }
 
         private static float RoadFeatureRatio(
@@ -587,6 +713,11 @@ namespace MapBuilderEditor
             return color.a > 64 && color.b > color.r + 18 && color.b > color.g + 5;
         }
 
+        private static bool IsLandPixel(Color32 color)
+        {
+            return color.a > 64 && !IsWaterPixel(color);
+        }
+
         private static bool IsRoadPixel(Color32 color)
         {
             return color.a > 64 && color.b > 29 && color.r > color.g * 0.95f;
@@ -607,11 +738,12 @@ namespace MapBuilderEditor
 
             Tilemap ground = CreateLayer(root.transform, "Ground", 0);
             Tilemap water = CreateLayer(root.transform, "Water", 10);
+            Tilemap shore = CreateLayer(root.transform, "Shore", 15);
             Tilemap roads = CreateLayer(root.transform, "Roads", 20);
 
             GameObject system = new GameObject("Map Generation");
             MapTilemapRenderer mapRenderer = system.AddComponent<MapTilemapRenderer>();
-            mapRenderer.Configure(ground, water, roads, catalog);
+            mapRenderer.Configure(ground, water, shore, roads, catalog);
             MapGenerationController controller = system.AddComponent<MapGenerationController>();
             controller.Configure(mapRenderer, MapGenerationSettings.Prototype64(), "prototype-seed-001", true);
             MapGenerationCanvasBuilder.Rebuild(controller);

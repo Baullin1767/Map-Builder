@@ -15,10 +15,14 @@ namespace MapBuilder
     {
         [Min(16)] public int width = 64;
         [Min(16)] public int height = 64;
-        [Range(1, 2)] public int minLakes = 1;
-        [Range(1, 2)] public int maxLakes = 2;
+        [Tooltip("Number of lakes placed inside the island.")]
+        [Range(2, 4)] public int minLakes = 2;
+        [Tooltip("Maximum number of lakes placed inside the island.")]
+        [Range(2, 4)] public int maxLakes = 4;
+        [Tooltip("Number of separate road routes generated across the island.")]
         [Range(2, 5)] public int roadGates = 3;
-        [Range(1, 5)] public int roadPoints = 3;
+        [Tooltip("Number of control points used to shape each road route.")]
+        [Range(2, 5)] public int roadPoints = 3;
 
         public MapGenerationSettings CopyValidated()
         {
@@ -26,10 +30,10 @@ namespace MapBuilder
             {
                 width = Mathf.Max(16, width),
                 height = Mathf.Max(16, height),
-                minLakes = Mathf.Clamp(minLakes, 1, 2),
-                maxLakes = Mathf.Clamp(maxLakes, Mathf.Clamp(minLakes, 1, 2), 2),
+                minLakes = Mathf.Clamp(minLakes, 2, 4),
+                maxLakes = Mathf.Clamp(maxLakes, Mathf.Clamp(minLakes, 2, 4), 4),
                 roadGates = Mathf.Clamp(roadGates, 2, 5),
-                roadPoints = Mathf.Clamp(roadPoints, 1, 5)
+                roadPoints = Mathf.Clamp(roadPoints, 2, 5)
             };
         }
 
@@ -38,7 +42,7 @@ namespace MapBuilder
 
     public sealed class MapLayout
     {
-        public const int GeneratorVersion = 1;
+        public const int GeneratorVersion = 4;
         public int Width { get; private set; }
         public int Height { get; private set; }
         public string Hash { get; private set; }
