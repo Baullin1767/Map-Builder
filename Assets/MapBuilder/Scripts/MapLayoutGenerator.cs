@@ -19,7 +19,7 @@ namespace MapBuilder
         {
             Vector2Int.up, Vector2Int.right, Vector2Int.down, Vector2Int.left
         };
-        private const int MinimumRoadStraightBeforeTurn = 3;
+        private const int MinimumRoadStraightBeforeTurn = 4;
 
         public MapLayoutGenerator(MapGenerationSettings settings)
         {
@@ -40,15 +40,17 @@ namespace MapBuilder
             EnsureIslandRoadCoverage(layout, island);
             RemoveRoadDeadEnds(layout);
             if (!HasAnyRoad(layout)) TryGenerateFallbackLoop(layout, island);
-            int maximumRoadStraight = Mathf.Clamp(13 - settings.roadPoints, 8, 11);
+            int maximumRoadStraight = Mathf.Clamp(15 - settings.roadPoints, 10, 13);
             int minimumDetourSpacing = Mathf.Clamp(
                 Mathf.Min(layout.Width, layout.Height) / 8, 6, 10);
             float roadDetourChance = Mathf.Lerp(
-                0.3f, 0.5f, (settings.roadPoints - 2) / 3f);
+                0.2f, 0.35f, (settings.roadPoints - 2) / 3f);
             BreakLongStraightRoads(
                 layout, island, maximumRoadStraight, minimumDetourSpacing,
                 roadDetourChance);
+            RemoveOneTileRoadLoops(layout);
             RemoveRoadDeadEnds(layout);
+            ConnectRoadNetwork(layout, island);
             BuildMasks(layout);
             return layout;
         }
@@ -1049,6 +1051,190 @@ namespace MapBuilder
             return false;
         }
 
+        private static void ConnectRoadNetwork(MapLayout layout, bool[] island)
+        {
+            int firstRoad = -1;
+            for (int i = 0; i < layout.CellCount; i++)
+            {
+                if (!layout.Roads[i]) continue;
+                firstRoad = i;
+                break;
+            }
+            if (firstRoad < 0) return;
+
+            int safety = layout.CellCount;
+            while (safety-- > 0)
+            {
+                bool[] network = FloodRoadNetwork(layout, firstRoad);
+                bool hasSeparateRoads = false;
+                for (int i = 0; i < layout.CellCount; i++)
+                {
+                    if (!layout.Roads[i] || network[i]) continue;
+                    hasSeparateRoads = true;
+                    break;
+                }
+                if (!hasSeparateRoads) return;
+
+                List<Vector2Int> connector = FindRoadNetworkConnector(
+                    layout, island, network,
+                    layout.RoadSeed ^ (ulong)(0xC011EC7 + safety * 8191));
+                if (connector.Count == 0) return;
+                for (int i = 0; i < connector.Count; i++)
+                {
+                    Vector2Int point = connector[i];
+                    layout.Roads[layout.Index(point.x, point.y)] = true;
+                }
+            }
+        }
+
+        private static bool[] FloodRoadNetwork(MapLayout layout, int start)
+        {
+            bool[] network = new bool[layout.CellCount];
+            Queue<int> queue = new Queue<int>();
+            network[start] = true;
+            queue.Enqueue(start);
+            while (queue.Count > 0)
+            {
+                int current = queue.Dequeue();
+                int x = current % layout.Width;
+                int y = current / layout.Width;
+                for (int d = 0; d < Cardinal.Length; d++)
+                {
+                    int nx = x + Cardinal[d].x;
+                    int ny = y + Cardinal[d].y;
+                    if (!layout.InBounds(nx, ny)) continue;
+                    int next = layout.Index(nx, ny);
+                    if (network[next] || !layout.Roads[next]) continue;
+                    network[next] = true;
+                    queue.Enqueue(next);
+                }
+            }
+            return network;
+        }
+
+        private static List<Vector2Int> FindRoadNetworkConnector(
+            MapLayout layout, bool[] island, bool[] network, ulong seed)
+        {
+            float[] scores = new float[layout.CellCount];
+            int[] previous = new int[layout.CellCount];
+            bool[] closed = new bool[layout.CellCount];
+            List<int> open = new List<int>();
+            for (int i = 0; i < layout.CellCount; i++)
+            {
+                scores[i] = float.PositiveInfinity;
+                previous[i] = -1;
+                if (!network[i]) continue;
+                scores[i] = 0f;
+                open.Add(i);
+            }
+
+            int fallback = -1;
+            while (open.Count > 0)
+            {
+                int bestListIndex = 0;
+                float bestScore = float.PositiveInfinity;
+                for (int i = 0; i < open.Count; i++)
+                {
+                    int candidate = open[i];
+                    if (scores[candidate] >= bestScore) continue;
+                    bestScore = scores[candidate];
+                    bestListIndex = i;
+                }
+
+                int current = open[bestListIndex];
+                open.RemoveAt(bestListIndex);
+                if (closed[current]) continue;
+                closed[current] = true;
+
+                int x = current % layout.Width;
+                int y = current / layout.Width;
+                if (!network[current])
+                {
+                    int contacts = CountRoadNeighboursOutsideNetwork(
+                        layout, network, x, y);
+                    if (contacts == 1)
+                        return BuildConnectorPath(previous, current, layout.Width);
+                    if (contacts > 1 && fallback < 0) fallback = current;
+                }
+
+                for (int d = 0; d < Cardinal.Length; d++)
+                {
+                    int nx = x + Cardinal[d].x;
+                    int ny = y + Cardinal[d].y;
+                    if (!layout.InBounds(nx, ny)) continue;
+                    int next = layout.Index(nx, ny);
+                    if (closed[next] || !island[next] || layout.Roads[next]) continue;
+                    if (CountRoadNeighboursInNetwork(layout, network, nx, ny) > 1)
+                        continue;
+
+                    float step = layout.Water[next] ? 8f : 1f;
+                    step += SeedUtility.Cell01(seed, nx, ny) * 0.04f;
+                    int oldPrevious = previous[current];
+                    if (oldPrevious >= 0)
+                    {
+                        int px = oldPrevious % layout.Width;
+                        int py = oldPrevious / layout.Width;
+                        if (x - px != Cardinal[d].x || y - py != Cardinal[d].y)
+                            step += 0.65f;
+                    }
+
+                    float score = scores[current] + step;
+                    if (score >= scores[next]) continue;
+                    scores[next] = score;
+                    previous[next] = current;
+                    open.Add(next);
+                }
+            }
+
+            return fallback >= 0
+                ? BuildConnectorPath(previous, fallback, layout.Width)
+                : new List<Vector2Int>();
+        }
+
+        private static List<Vector2Int> BuildConnectorPath(
+            int[] previous, int end, int width)
+        {
+            List<Vector2Int> result = new List<Vector2Int>();
+            int cursor = end;
+            while (cursor >= 0)
+            {
+                result.Add(new Vector2Int(cursor % width, cursor / width));
+                cursor = previous[cursor];
+            }
+            result.Reverse();
+            return result;
+        }
+
+        private static int CountRoadNeighboursInNetwork(
+            MapLayout layout, bool[] network, int x, int y)
+        {
+            int count = 0;
+            for (int d = 0; d < Cardinal.Length; d++)
+            {
+                int nx = x + Cardinal[d].x;
+                int ny = y + Cardinal[d].y;
+                if (!layout.InBounds(nx, ny)) continue;
+                int index = layout.Index(nx, ny);
+                if (layout.Roads[index] && network[index]) count++;
+            }
+            return count;
+        }
+
+        private static int CountRoadNeighboursOutsideNetwork(
+            MapLayout layout, bool[] network, int x, int y)
+        {
+            int count = 0;
+            for (int d = 0; d < Cardinal.Length; d++)
+            {
+                int nx = x + Cardinal[d].x;
+                int ny = y + Cardinal[d].y;
+                if (!layout.InBounds(nx, ny)) continue;
+                int index = layout.Index(nx, ny);
+                if (layout.Roads[index] && !network[index]) count++;
+            }
+            return count;
+        }
+
         private static void RemoveRoadDeadEnds(MapLayout layout)
         {
             Queue<int> queue = new Queue<int>();
@@ -1258,36 +1444,80 @@ namespace MapBuilder
                 }
                 return true;
             }
-            return TryAddLoopBranch(layout, island, x, y, horizontal);
+            return false;
         }
 
-        private static bool TryAddLoopBranch(
-            MapLayout layout, bool[] island, int x, int y, bool horizontal)
+        private static void RemoveOneTileRoadLoops(MapLayout layout)
         {
-            for (int side = -1; side <= 1; side += 2)
-            for (int forward = -1; forward <= 1; forward += 2)
+            int safety = layout.CellCount;
+            while (safety-- > 0)
             {
-                int firstX = horizontal ? x : x + side;
-                int firstY = horizontal ? y + side : y;
-                int secondX = horizontal ? x + forward : x + side;
-                int secondY = horizontal ? y + side : y + forward;
-                int anchorX = horizontal ? x + forward : x;
-                int anchorY = horizontal ? y : y + forward;
-                if (!layout.InBounds(firstX, firstY) ||
-                    !layout.InBounds(secondX, secondY) ||
-                    !layout.IsRoad(anchorX, anchorY)) continue;
+                bool removed = false;
+                for (int y = 0; y < layout.Height - 1 && !removed; y++)
+                for (int x = 0; x < layout.Width - 1 && !removed; x++)
+                {
+                    if (!layout.IsRoad(x, y) || !layout.IsRoad(x + 1, y) ||
+                        !layout.IsRoad(x, y + 1) || !layout.IsRoad(x + 1, y + 1))
+                    {
+                        continue;
+                    }
+                    RemoveLeastConnectedRoad(layout, x, y, 2);
+                    removed = true;
+                }
 
-                int first = layout.Index(firstX, firstY);
-                int second = layout.Index(secondX, secondY);
-                if (!island[first] || !island[second] ||
-                    layout.Water[first] || layout.Water[second] ||
-                    layout.Roads[first] || layout.Roads[second]) continue;
+                for (int y = 1; y < layout.Height - 1 && !removed; y++)
+                for (int x = 1; x < layout.Width - 1 && !removed; x++)
+                {
+                    if (layout.IsRoad(x, y) ||
+                        !IsRoadRingAroundCell(layout, x, y))
+                    {
+                        continue;
+                    }
+                    RemoveLeastConnectedRoad(layout, x - 1, y - 1, 3);
+                    removed = true;
+                }
 
-                layout.Roads[first] = true;
-                layout.Roads[second] = true;
-                return true;
+                if (!removed) break;
             }
-            return false;
+        }
+
+        private static bool IsRoadRingAroundCell(
+            MapLayout layout, int centerX, int centerY)
+        {
+            for (int oy = -1; oy <= 1; oy++)
+            for (int ox = -1; ox <= 1; ox++)
+            {
+                if (ox == 0 && oy == 0) continue;
+                if (!layout.IsRoad(centerX + ox, centerY + oy)) return false;
+            }
+            return true;
+        }
+
+        private static void RemoveLeastConnectedRoad(
+            MapLayout layout, int left, int bottom, int size)
+        {
+            int bestIndex = -1;
+            int bestNeighbours = int.MaxValue;
+            uint bestTieBreak = uint.MaxValue;
+            for (int oy = 0; oy < size; oy++)
+            for (int ox = 0; ox < size; ox++)
+            {
+                if (size == 3 && ox == 1 && oy == 1) continue;
+                int x = left + ox;
+                int y = bottom + oy;
+                if (!layout.IsRoad(x, y)) continue;
+                int neighbours = CountRoadNeighbours(layout, x, y);
+                uint tieBreak = SeedUtility.CellHash(layout.RoadSeed, x, y);
+                if (neighbours > bestNeighbours ||
+                    (neighbours == bestNeighbours && tieBreak >= bestTieBreak))
+                {
+                    continue;
+                }
+                bestIndex = layout.Index(x, y);
+                bestNeighbours = neighbours;
+                bestTieBreak = tieBreak;
+            }
+            if (bestIndex >= 0) layout.Roads[bestIndex] = false;
         }
 
         private static void BuildMasks(MapLayout layout)
